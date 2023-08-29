@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0a4a7a73.css",
+    "main.js": "/static/js/main.824efea0.js",
+    "static/js/787.32188ec9.chunk.js": "/static/js/787.32188ec9.chunk.js",
+    "static/media/Lab logo.jpg": "/static/media/Lab logo.baa507e66c505ebf1176.jpg",
+    "static/media/university-of-florida-logo-532x336-1.webp": "/static/media/university-of-florida-logo-532x336-1.6f4e855590b7e5c73745.webp",
+    "index.html": "/index.html",
+    "main.0a4a7a73.css.map": "/static/css/main.0a4a7a73.css.map",
+    "main.824efea0.js.map": "/static/js/main.824efea0.js.map",
+    "787.32188ec9.chunk.js.map": "/static/js/787.32188ec9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a4a7a73.css",
+    "static/js/main.824efea0.js"
+  ]
+}

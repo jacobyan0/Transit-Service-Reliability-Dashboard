@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: Miami_Ontime_Performance_Board
+
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/miami_on_time_db
+      username: root
+      password: just_green_666
+      time-between-eviction-runs-millis: 600000
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: assign_id
+    banner: false
+
