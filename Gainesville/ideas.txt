@@ -1,0 +1,59 @@
+Checklist of things to do plus ideas:
+    fix the appearance of website when window is made smaller
+    restructure page
+    show data by route
+    fix when data is slow to show up -> "data is loading" or a progress bar? circle?
+    
+DOCUMENTATION:
+    added new user for database
+        USER: remote
+        PASSWORD: Djibouti$1990
+
+ideas for gatorShade
+word doc with relevant things, research, ideas
+try to connect people to shelter from heat
+crowdsource
+
+
+IMPORTANT IDEAS:
+    - shelter != protection from heat, only protection from sun
+    - on certain days, when heat index is particularly high, humidity + heat = better to stay indoors
+        shelter outside wont help
+    - vs UV, protection from sun damage is a different thing
+plant trees + shelter
+different colors/warning to let users know what kind of heat they are dealing with
+an information section -> how to deal with heat + sun
+    sunscreen
+    drink water
+    eat a good meal, etc
+
+how to find out where most heat exposure is felt?
+useful data: what general neighborhoods or populations of people suffer the worst of heat illnesses
+    we can assume owning a car means you generally are safer from heat exposure?
+
+1. public information  
+    what counts as a cooling facility -> like a park with trees, does a walmart count?
+    places that are easily accessible and provide people with shade, a place to rest
+    important to consider the homeless
+    calling 211 provides info 
+    on certain very hot days, there are locations where officials are apparently giving out water
+    cooling center -> public location, public restrooms, should have sources of water, should be free to enter, should let you sit 
+        alachua county public library
+        community centers
+            clarence r. kelly center
+            eastside community center
+            mlk center
+    website may keep track of whether these locations are open
+
+2. heat exposure measurement tool
+    uv exposure for the day, heat level, humidity
+    ideas: 
+        - let user enter their own information
+        "How sensitive am i"
+        gives personalized feedback on whether you should travel on this day/at this time, or stay at home
+    I am 22 years old, female, 140 lb, 5'8 i plan to traavel march 15 2-5 pm 
+        - tips: bring water, if the trip includes more than 30 min of walking, take a rest, wear sunscreen
+    
+
+3. crowdsourcing
+    feedback reports, let users leave comments, etc
