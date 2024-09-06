@@ -4,21 +4,21 @@
     }
 </style>
 <script>
-  <?php include 'js/feedbackscript.js'?>
+  <?php include 'js/feedback.js'?>
 </script>
 <div class="bg-green-700/40 shadow-lg h-5/6 flex flex-row pt-4 pb-4">
     <div class="px-4 w-1/3 text-base-content overflow-auto">
-        <form id="feedbackForm" action='realtime_data/add.php' method='post'>
+        <form id="feedbackForm" action='backend/user_feedback/add.php' method='post'>
             <div class="bg-white/60 p-4 rounded-lg">
                 <div class="text-3xl md:text-3xl font-bold font-sans text-slate-900/75 mb-2">Feedback</div>
-                <select onchange="openReport(this.value)" id="reportType" name="type" class="w-full px-2 p-1 rounded-lg hover:bg-green-700/50 bg-[#448b5c]/50 font-bold">
+                <select onchange="selectReport(this.value)" id="reportSelection" name="type" class="w-full px-2 p-1 rounded-lg hover:bg-green-700/50 bg-[#448b5c]/50 font-bold">
                     <option selected disabled>Select Report</option>
                     <option value="general">Leave Feedback</option>
                     <option value="incident">Report an Incident</option>
                 </select>
-                <div id="formType" class="hidden font-bold">
+                <div id="formDropdown" class="hidden font-bold">
                     <div class="divider mb-1 mt-1"></div> 
-                    <select onchange="openForm(this.value)" id="typeSelection" name="form" class="w-full px-2 p-1 rounded-lg hover:bg-green-700/50 bg-[#448b5c]/50 font-bold">
+                    <select onchange="selectForm(this.value)" id="formSelection" name="form" class="w-full px-2 p-1 rounded-lg hover:bg-green-700/50 bg-[#448b5c]/50 font-bold">
                         <option selected disabled>Select Form</option>
                         <option value="general">General</option>
                         <option value="stop">Stop</option>
@@ -27,13 +27,13 @@
                     <div class="mt-1 text-center font-semibold text-sm">or click on the map to report on a specific location.</div>
                 </div>
                 <div class="divider mb-1 mt-1"></div> 
-                <div id="routeForm" class="hidden font-semibold text-base-content">
+                <div id="route" class="hidden font-semibold text-base-content">
                     <div>Bus ID (if applicable):</div>
                     <input type="number" id="message" name="bus" class="px-2 p-1 w-full rounded-lg"></input>
                     <select id="routeselection" name="route" onchange="showRouteLayer(this.value)" class="mt-3 hover:bg-slate-400/50 bg-slate-400/30 font-semibold rounded-lg px-2 p-1 w-full">
                         <option disabled selected value="n/a">Select Route</option>
                         <?php
-                            $sql = "SELECT `route_id`, `route_long_name`, `route_color` FROM `routes` ORDER BY `routes`.`route_id` ASC";
+                            $sql = "SELECT `route_id`, `route_name`, `route_color` FROM `routes` ORDER BY `routes`.`route_id` ASC";
                             $result = $conn->query($sql);
                             if ($result->num_rows > 0) {
                             // Output data of each row
@@ -48,7 +48,7 @@
                         ?>
                     </select>
                 </div>
-                <div id="stopForm" class="hidden font-semibold text-base-content">
+                <div id="stop" class="hidden font-semibold text-base-content">
                     <label class="flex w-full items-center gap-2">
                         <input type="text" class="grow rounded-lg px-2 p-1" maxlength="50" onkeyup="searchMarkers()" onkeydown="searchMarkers()" id="stopSearchInput" placeholder="Search for stops" />
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70"><path fill-rule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clip-rule="evenodd" /></svg>
@@ -56,8 +56,9 @@
                     <select id="stoprouteselection" onchange="stopsAlongRoute(this.value)" class="mt-3 hover:bg-slate-400/50 bg-slate-400/30 font-semibold rounded-lg px-2 p-1 w-full">
                         <option disabled selected value="none">View Stops</option>
                         <option value="all">View All Stops</option>
+                        <option value="clear">Clear Stops</option>
                         <?php
-                            $sql = "SELECT `route_id`, `route_long_name`, `route_color` FROM `routes` ORDER BY `routes`.`route_id` ASC";
+                            $sql = "SELECT `route_id`, `route_name`, `route_color` FROM `routes` ORDER BY `routes`.`route_id` ASC";
                             $result = $conn->query($sql);
                             if ($result->num_rows > 0) {
                             // Output data of each row
@@ -72,7 +73,7 @@
                         ?>
                     </select>
                 </div>
-                <div id="allForms" class="hidden font-semibold text-base-content">
+                <div id="default" class="hidden font-semibold text-base-content">
                     <div>Time:</div>
                     <input type="time" id="incident-time" name="time" class="rounded-lg px-2 w-full">
                     <div class="mt-2">Date:</div>

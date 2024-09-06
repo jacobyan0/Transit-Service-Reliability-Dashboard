@@ -66,7 +66,7 @@ var barGraph = new Chart(ctx, {
 //display bar chart data -> update based on date selection and route
 function vehicleDelayBarChart(day, route) {
   $.ajax({
-    url: "hist_data/bardata.php",
+    url: "backend/performance/bardata.php",
     method: "GET",
     dataType: 'text',
     data: {date: day, route: route},
@@ -189,7 +189,7 @@ function getDay() {
       delays.addTo(map2);
     }
   }
-  xhttp.open("GET", "hist_data/today.php?day=" + getDays() + "&route=" + currentRoute);
+  xhttp.open("GET", "backend/performance/today.php?day=" + getDays() + "&route=" + currentRoute);
   xhttp.send();
 }
 
@@ -197,7 +197,7 @@ function getDay() {
 function popupGeneration(e, day) {
   $.ajax(
     {
-      url: "hist_data/delayPopup.php",
+      url: "backend/performance/delayPopup.php",
       type: 'POST',
       dataType: 'text',
       data: {date: day, lat: e.target.getLatLng().lat, lng: e.target.getLatLng().lng, val: e.target.options.title},
@@ -218,7 +218,7 @@ function popupGeneration(e, day) {
 function showDelays(day, route) {
   $.ajax(
     {
-      url: "hist_data/delayMap.php",
+      url: "backend/performance/delayMap.php",
       type: 'POST',
       dataType: 'text',
       data: {date: day, route: route},
@@ -288,7 +288,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function defaultMap(day, route) {
   $.ajax(
     {
-      url: "hist_data/defaultMap.php",
+      url: "backend/performance/defaultMap.php",
       type: 'POST',
       dataType: 'text',
       data: {route: route},

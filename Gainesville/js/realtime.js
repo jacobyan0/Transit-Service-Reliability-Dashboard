@@ -44,7 +44,7 @@ if (currentPage == "realtime") {
   };
   legend.addTo(map);
 }
-if (currentPage == "bus-census" || currentPage == "amenity-data") {
+if (currentPage == "crowdsourcing" || currentPage == "system_data") {
     getInventory();
     var legend = L.control({position: 'topright'});
   legend.onAdd = function (map) {
@@ -168,7 +168,7 @@ function addBus(value) {
     //call php function to show the route popup
     $.ajax(
         {
-          url: "realtime_data/addRoute.php",
+          url: "backend/realtime/addRoute.php",
           type: 'POST',
           dataType: 'text',
           data: {route: value},
@@ -210,7 +210,7 @@ function changeTime() {
 function getRealtime() {
   $.ajax(
       {
-        url: "realtime_data/realtime.php",
+        url: "backend/realtime/realtime.php",
         type: 'POST',
         dataType: "json",
         data: {busArray: JSON.stringify(buses)},
@@ -235,7 +235,7 @@ function getRealtime() {
             if (bus.vid in busMark) {
               busMark[bus.vid]._icon.style.color = bus.dlycolor;
               busMark[bus.vid].slideTo([bus.lat, bus.lon], {duration:15000});
-              busMark[bus.vid].bindPopup("<b>Route "+bus.rt+"</b></br>"+"#"+bus.vid+"</br>Destination: "+bus.des+"</br>Currently Near: "+bus.nearStop);
+              busMark[bus.vid].bindPopup("<b>Route "+bus.rt+"</b></br>"+"#"+bus.vid+"</br><b>Destination:</b> "+bus.des+"</br><b>Currently Near:</b> "+bus.nearStop);
             }
             else {
               buses.push(bus);

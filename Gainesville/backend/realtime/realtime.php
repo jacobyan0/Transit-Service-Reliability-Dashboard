@@ -1,7 +1,19 @@
 <?php
-	require_once('../backend/config.php');
-    $file = fopen("../data/realtime.csv", "r") or die("Unable to open file!");
+	require_once('../config.php');
+    $file = fopen("../../data/realtime.csv", "r") or die("Unable to open file!");
     
+    $warning = fgets($file);
+    
+    $alreadyRead = false;
+    if (trim($warning) !== "read") {
+        $realtime_content = file_get_contents("../../data/realtime.csv");
+        $updated = "read\n" . $realtime_content;
+        file_put_contents("../../data/realtime.csv", $updated);
+    }
+    else {
+        $alreadyRead = true;
+    }
+
     if (isset($_POST['busArray'])) {
         $busArray = $_POST["busArray"];
         $busArray = json_decode($busArray);
@@ -10,6 +22,9 @@
     while(!feof($file)) {
         $line = fgetcsv($file);
         if ($line[0] == "vid") {
+            continue;
+        }
+        if ($line[0] == "read") {
             continue;
         }
         $vid = $line[0];
@@ -36,7 +51,7 @@
                 $rtcolor = $row['route_color'];
             }
         }
-        $sql = "SELECT `stop_name`,`stop_desc`,`stop_lat`, `stop_lon`, SQRT( POW(69.1 * (`stop_lat` - $lat), 2) + POW(69.1 * ($lon - `stop_lon`) * COS(`stop_lat` / 57.3), 2)) AS distance FROM stops HAVING distance < 25 ORDER BY distance LIMIT 1;";
+        $sql = "SELECT `stop_name`,`stop_desc`,`lat`, `lon`, SQRT( POW(69.1 * (`lat` - $lat), 2) + POW(69.1 * ($lon - `lon`) * COS(`lat` / 57.3), 2)) AS distance FROM stop_inventory HAVING distance < 25 ORDER BY distance LIMIT 1;";
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
@@ -70,9 +85,10 @@
             $newBus->nearStop = $nearestStop;
             array_push($busArray, $newBus);
         }
-
-        $sql = "INSERT ignore into `data` (vid, rt, tmstmp, lat, lon, des, dly, nearest_stop) VALUES ('$vid', '$rt', '$tmstmp', '$lat', '$lon', '$des', '$dly', '$nearestStop')";
-        $result = $conn->query($sql);
+        if (!$alreadyRead) {
+            $sql = "INSERT ignore into `data` (vid, rt, tmstmp, lat, lon, des, dly, nearest_stop) VALUES ('$vid', '$rt', '$tmstmp', '$lat', '$lon', '$des', '$dly', '$nearestStop')";
+            $result = $conn->query($sql);
+        }
     }
     $conn->close();
     fclose($file);

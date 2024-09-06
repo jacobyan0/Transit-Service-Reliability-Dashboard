@@ -1,4 +1,4 @@
-//Script for Bus Stop Amenities page
+//Script for Crowdsourcing and System Data pages
 
 //define icons
 var incompleteStop = L.icon({
@@ -26,7 +26,7 @@ var haveBikeracks = 0;
 function getInventory() {
 $.ajax(
 {
-    url: "realtime_data/readinventory.php",
+    url: "backend/amenities/readinventory.php",
     type: 'POST',
     dataType: "json",
     data: {stopArray: JSON.stringify(bus_stops)},
@@ -94,7 +94,7 @@ $.ajax(
             stop_markers[stop.id] = L.marker([stop.lat, stop.lon], {icon: blueStop}).bindPopup(stopText);
           }
           else {
-            var stopText = "<h3>#" + stop.id + ": " + stop.name+"</h3><table><tr><th>Amenity</th><th>Amount</th></tr><tr><td>Shelters</td><td>N/A</td></tr><tr><td>Benches</td><td>N/A</td></tr><tr><td>Trashcans</td><td>N/A</tr><tr><td>Bikeracks</td><td>N/A</td></tr></table>";
+            var stopText = "<h3 class='text-red-500'>#" + stop.id + ": " + stop.name+"</h3><table><tr><th>Amenity</th><th>Amount</th></tr><tr><td>Shelters</td><td>N/A</td></tr><tr><td>Benches</td><td>N/A</td></tr><tr><td>Trashcans</td><td>N/A</tr><tr><td>Bikeracks</td><td>N/A</td></tr></table>";
             stop_markers[stop.id] = L.marker([stop.lat, stop.lon], {icon: incompleteStop}).bindPopup(stopText);
           }
           if (stop.benches > 0) {
@@ -115,19 +115,8 @@ $.ajax(
           stop_markers[stop.id].addTo(map);
           stop_markers[stop.id].on('click', function() {
               map.setView(stop_markers[stop.id].getLatLng(), 16); 
-              document.getElementById("stopForm").style.display = "block";
-              document.getElementById("defaultInfoText").style.display = "none";
               markerToReport = stop_markers[stop.id];
-              document.getElementById("title").innerHTML = "#" + stop.id + ": " + stop.name;
-              document.getElementById("benches").value = stop.benches;
-              document.getElementById("cans").value = stop.cans;
-              document.getElementById("shelters").value = stop.shelters;
-              document.getElementById("racks").value = stop.racks;
-              document.getElementById("type").value = stop.type.toLowerCase();
-              console.log(stop.type.toLowerCase());
-              if (stop.type == "") {
-                document.getElementById("type").value = "none";
-              }
+              displayStop(stop);
           });
           displayedMarkers.add(stop_markers[stop.id].getLatLng());
         }
@@ -157,32 +146,83 @@ $.ajax(
 });
 }
 
-function clearForm() {
-  document.getElementById("stopForm").style.display = "none";
-  document.getElementById("defaultInfoText").style.display = "block";
+//on default page load stop #1
+document.addEventListener("DOMContentLoaded", function() {
+  markerToReport = stop_markers[1];
+  var stopToDisplay = bus_stops.find(stop => stop.id === "1");
+  displayStop(stopToDisplay);
+});
+
+//helper function -> resets amenity form to default values
+function resetAmenities() {
+  for (let id in stop_markers) {
+    if (stop_markers[id] === markerToReport) {
+      var stopToDisplay = bus_stops.find(stop => stop.id === id);
+      displayStop(stopToDisplay);
+    }
+  }
 }
 
+//submit amenity form
+function submitForm(event) {
+  event.preventDefault();
+  var stopID = 0;
+  for (let id in stop_markers) {
+    if (stop_markers[id] === markerToReport) {
+      stopID = id;
+    }
+  }
+  var form = document.getElementById('stopForm');
+  var formData = new FormData(form);
+  formData.append('stopID', stopID);
+
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', 'backend/amenities/add.php', true);
+  xhr.onload = function() {
+      if (xhr.status === 200) {
+          document.getElementById('feedback').style.display = "flex";
+      } else {
+          console.log('Form submission failed.');
+      }
+  };
+  xhr.send(formData);
+}
+
+//helper function -> changes amenity form display to reflect selected stop
+function displayStop(stop) {
+  document.getElementById('feedback').style.display = "none";
+  markerToReport = stop_markers[stop.id]
+  if (stop.benches) {
+    document.getElementById("title").innerHTML = "#" + stop.id + ": " + stop.name;
+  }
+  else {
+    document.getElementById("title").innerHTML = "<div class='text-red-500/90'> #" + stop.id + ": " + stop.name + "</div>";
+  }
+  document.getElementById("benches").value = stop.benches;
+  document.getElementById("cans").value = stop.cans;
+  document.getElementById("shelters").value = stop.shelters;
+  document.getElementById("racks").value = stop.racks;
+  document.getElementById("type").value = stop.type.toLowerCase();
+  if (stop.type == "") {
+    document.getElementById("type").value = "none";
+  }
+}
+
+//function called when user uses search feature
 function searchMarkers() {
+  $('#stopRoute').get(0).selectedIndex = 0;
+  currentRoute = null;
+  showStopLayer();
     var searchQuery = document.getElementById("stopSearchInput").value;
     searchQuery = searchQuery.toLowerCase(); 
-    var safeText = searchQuery.replace(/[;:"*$%]/g, '');
+    var safeText = searchQuery.replace(/[;"*$%]/g, '');
     bus_stops.forEach((stop)=> {
         var text = stop_markers[stop.id].getPopup().getContent().toLowerCase();
         if (text.includes(safeText)) {
             stop_markers[stop.id].addTo(map);
             displayedMarkers.add(stop_markers[stop.id].getLatLng());
-            document.getElementById("stopForm").style.display = "block";
-            document.getElementById("defaultInfoText").style.display = "none";
             markerToReport = stop_markers[stop.id];
-            document.getElementById("title").innerHTML = "#" + stop.id + ": " + stop.name;
-            document.getElementById("benches").value = stop.benches;
-            document.getElementById("cans").value = stop.cans;
-            document.getElementById("shelters").value = stop.shelters;
-            document.getElementById("racks").value = stop.racks;
-            document.getElementById("type").value = stop.type.toLowerCase();
-            if (stop.type == "") {
-              document.getElementById("type").value = "none";
-            }
+            displayStop(stop);
         }
         else {
             stop_markers[stop.id].removeFrom(map);
@@ -200,6 +240,7 @@ function searchMarkers() {
     }
 }
 
+//helper function -> displays all available stops on the map
 function addStops() {
     removeStops();
     bus_stops.forEach((stop) => {
@@ -208,6 +249,7 @@ function addStops() {
       });
 }
 
+//helper function -> clears all stops from the map
 function removeStops() {
   bus_stops.forEach((stop) => {
       stop_markers[stop.id].removeFrom(map);
@@ -217,7 +259,7 @@ function removeStops() {
 
 var pathForStops = L.geoJSON().addTo(map);
 
-
+//function called when user selects to view stops by route
 function findStops(value) {
   currentRoute = null;
   if (currentLocation) {
@@ -234,7 +276,7 @@ function findStops(value) {
   showStopLayer();
 }
 
-
+//displays selected route feature 
 function showStopLayer() {
   if (pathForStops) {
     map.removeLayer(pathForStops);
@@ -251,48 +293,29 @@ function showStopLayer() {
   });
 }
 
-
+//helper function for display of route
 function nearestFilter(feature) {
   return currentRoute == feature.properties.route_id;
 }
 
-
+//helper function
 function displayRouteStops(routeID) {
   removeStops();
   $.ajax(
     {
-      url: "realtime_data/stops.php",
+      url: "backend/stops.php",
       type: 'POST',
       dataType: 'text',
       data: {route: routeID},
       success: function (responseText)
       {
         eval(responseText);
-      },
-                      
+      },             
       error: function (responseText)
       {
         console.log("Stop display error: " + responseText);
       }
   });
-}
-
-
-function displayNearest(feature) {
-    removeStops();
-    for (var i = 0; i < feature.geometry.coordinates.length; i++) {
-      bus_stops.forEach((stop)=> {
-        var markerLatLng = stop_markers[stop.id].getLatLng();
-        var featureLatLng = L.latLng(feature.geometry.coordinates[i][1], feature.geometry.coordinates[i][0]);
-        var distanceInMeters = markerLatLng.distanceTo(featureLatLng);
-        
-        var feet = distanceInMeters * 3.28084;
-        if (feet <= 400) {
-            stop_markers[stop.id].addTo(map);
-            displayedMarkers.add(stop_markers[stop.id].getLatLng());
-        }
-    });
-  }
 }
 
 //function to 'view stops by amenities' -> users check boxes for amenities
@@ -352,24 +375,9 @@ function showAmenities() {
   }
 }
 
-// Function to check if a marker overlaps with the line segment within a certain distance
-function markersThatOverlap(featureGeometry) {
-  removeStops();
-  const line = turf.lineString(featureGeometry.coordinates);
-  bus_stops.forEach((stop)=> {
-    var markerLatLng = stop_markers[stop.id].getLatLng();
-    const markerPoint = turf.point([markerLatLng.lng, markerLatLng.lat]);
-    const dist = turf.pointToLineDistance(markerPoint, line, { units: 'miles' });
-    console.log(dist);
-    if (dist !== undefined && dist <= 0.025) {
-      stop_markers[stop.id].addTo(map);
-      displayedMarkers.add(stop_markers[stop.id].getLatLng());
-  }
-  });
-}
-
 //called when user selects to "search by current location"
 function userLocation() {
+  $('#stopRoute').get(0).selectedIndex = 0;
   document.getElementById('maploading').style.display = "flex";
   if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(showPosition, showError);
@@ -380,17 +388,20 @@ function userLocation() {
 
 //helper function for displaying stops within 1/2 mile of user location
 function showPosition(position) {
+  //clear any routes and stops being displayed and reset route selection
   currentRoute = null;
   showStopLayer();
   document.getElementById('stopRoute').selectedIndex = 0;
   removeStops();
+
+  //obtain user position
   var userPosition = L.latLng(position.coords.latitude, position.coords.longitude);
   map.setView(userPosition, 16);
   currentLocation = L.marker(userPosition).addTo(map);
   bus_stops.forEach((stop)=> {
     var markerLatLng = stop_markers[stop.id].getLatLng();
     var meters = userPosition.distanceTo(markerLatLng);
-    if (meters <= 805) {
+    if (meters <= 804.672) {
         stop_markers[stop.id].addTo(map);
         displayedMarkers.add(stop_markers[stop.id].getLatLng());
     }

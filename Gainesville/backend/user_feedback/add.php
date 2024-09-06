@@ -1,5 +1,5 @@
 <?php
-	require_once('../backend/config.php');
+	require_once('../config.php');
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $time = htmlspecialchars($_POST['time']); 
@@ -24,9 +24,9 @@
         $datetime = $date . ' ' . $time;
         $tmstmp = date('Y-m-d H:i:s', strtotime($datetime));
 
-        $sql = "INSERT ignore into `user_feedback` (tmstmp, location, description, type, form, reason_for_feedback, bus_id, route_id, severity, nature_of_incident) VALUES ('$tmstmp', '$location', '$description', '$type', '$form', '$reason', '$bus', '$route', '$severity', '$nature')";
+        $sql = "INSERT ignore into `user_feedback` (tmstmp, location, desc, type, form, reason_for_feedback, bus_id, route_id, severity, nature_of_incident) VALUES ('$tmstmp', '$location', '$description', '$type', '$form', '$reason', '$bus', '$route', '$severity', '$nature')";
         $result = $conn->query($sql);
     }
 
-    header("Location: ../index.php?page=reportform");
+    header("Location: ../../index.php?page=user_feedback");
     exit();

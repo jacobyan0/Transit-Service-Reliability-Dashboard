@@ -1,5 +1,5 @@
 <?php
-require_once('../backend/config.php');
+require_once('../config.php');
 $day = $_POST["date"];
 $lat = $_POST["lat"];
 $lng = $_POST["lng"];
@@ -11,7 +11,7 @@ $start = date_format($startdate,"Ymd H:i");
 $enddate=date_create($end);
 $end = date_format($enddate,"Ymd H:i");
 
-$sql = "SELECT ontime.results.stop_lat, ontime.results.stop_lon, COUNT(*) AS delays FROM ontime.results JOIN ontime.data ON ontime.results.route_id = ontime.data.rt WHERE ontime.results.stop_lat = $lat AND ontime.results.stop_lon = $lng AND ontime.data.dly in ('True', 1) AND ST_Distance_Sphere(POINT(ontime.results.stop_lon, ontime.results.stop_lat), POINT(ontime.data.lon, ontime.data.lat)) <= 30.48 GROUP BY ontime.results.stop_lat, ontime.results.stop_lon ORDER BY delays ASC;";
+$sql = "SELECT ontime.routes_by_stop.stop_lat, ontime.routes_by_stop.stop_lon, COUNT(*) AS delays FROM ontime.routes_by_stop JOIN ontime.data ON ontime.routes_by_stop.route_id = ontime.data.rt WHERE ontime.routes_by_stop.stop_lat = $lat AND ontime.routes_by_stop.stop_lon = $lng AND ontime.data.dly in ('True', 1) AND ST_Distance_Sphere(POINT(ontime.routes_by_stop.stop_lon, ontime.routes_by_stop.stop_lat), POINT(ontime.data.lon, ontime.data.lat)) <= 30.48 GROUP BY ontime.routes_by_stop.stop_lat, ontime.routes_by_stop.stop_lon ORDER BY delays ASC;";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
@@ -19,7 +19,7 @@ if ($result->num_rows > 0) {
     }
 }
 
-$sql2 = "SELECT results.`stop_name`, results.`stop_id`, results.`stop_desc`, results.`route_id` FROM results WHERE results.`stop_lat` = $lat AND results.`stop_lon` = $lng;";
+$sql2 = "SELECT routes_by_stop.`stop_name`, routes_by_stop.`stop_id`, routes_by_stop.`stop_desc`, routes_by_stop.`route_id` FROM routes_by_stop WHERE routes_by_stop.`stop_lat` = $lat AND routes_by_stop.`stop_lon` = $lng;";
 $result2 = $conn->query($sql2);
 $routes = "";
 if ($result2->num_rows > 0) {

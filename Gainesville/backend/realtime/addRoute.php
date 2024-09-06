@@ -1,6 +1,6 @@
 <?php
     //Displays route buttons on realtime page
-    require_once('../backend/config.php');
+    require_once('../config.php');
     $route = $_POST['route'];
     $sql = "SELECT `route_color` FROM `routes` WHERE `route_id` = $route";
     $result = $conn->query($sql);

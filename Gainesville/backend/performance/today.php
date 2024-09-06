@@ -1,5 +1,5 @@
 <?php
-    require_once('../backend/config.php');
+    require_once('../config.php');
     $day = $_GET['day'];
     $route = $_GET['route'];
     $start = substr($day, 0, 16);

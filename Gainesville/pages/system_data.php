@@ -24,7 +24,7 @@
     }
 </style>
 <script>
-  <?php include 'js/amenityscript.js'?>
+  <?php include 'js/amenities.js'?>
 </script>
 <div class="bg-green-700/40 shadow-lg h-5/6 flex flex-row">
   <div class="p-4 w-1/3 overflow-auto text-base-content mb-4">

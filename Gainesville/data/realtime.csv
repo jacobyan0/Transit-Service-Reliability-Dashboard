@@ -1,3 +1,4 @@
+read
 vid,tmstmp,lat,lon,hdg,pid,rt,des,pdist,dly,spd,tatripid,origtatripno,tablockid,zone,mode,psgld,stst,stsd
 1403,20240814 18:18:37,29.62260047145732,-82.38159826981851,328,480,12,Butler Plaza Transfer Station,19302,False,15,13063,868904,10122,,0,EMPTY,64800,2024-08-14
 2302,20240814 18:18:34,29.646164158878868,-82.34437794504906,242,513,12,Reitz Union/UF Campus,25182,False,15,13128,868968,10121,,0,EMPTY,64560,2024-08-14

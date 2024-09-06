@@ -1,6 +1,6 @@
 
 <?php
-    require_once('../backend/config.php');
+    require_once('../config.php');
     $day = $_POST["date"];
     $route = $_POST["route"];
     $start = substr($day, 0, 16);
@@ -10,9 +10,9 @@
     $enddate=date_create($end);
     $end = date_format($enddate,"Ymd H:i");
 
-    $sql = "SELECT ontime.results.stop_lat, ontime.results.stop_lon, (SUM(CASE WHEN ontime.data.dly in ('True', 1) THEN 1 ELSE 0 END) / COUNT(*)) * 100 AS delay_ratio FROM ontime.results JOIN ontime.data ON ontime.results.route_id = ontime.data.rt WHERE `tmstmp` >= '$start' AND `tmstmp` <= '$end' AND ST_Distance_Sphere(POINT(ontime.results.stop_lon, ontime.results.stop_lat), POINT(ontime.data.lon, ontime.data.lat)) <= 30.48 GROUP BY ontime.results.stop_lat, ontime.results.stop_lon HAVING delay_ratio > 0 ORDER BY `delay_ratio` ASC;";
+    $sql = "SELECT ontime.routes_by_stop.stop_lat, ontime.routes_by_stop.stop_lon, (SUM(CASE WHEN ontime.data.dly in ('True', 1) THEN 1 ELSE 0 END) / COUNT(*)) * 100 AS delay_ratio FROM ontime.routes_by_stop JOIN ontime.data ON ontime.routes_by_stop.route_id = ontime.data.rt WHERE `tmstmp` >= '$start' AND `tmstmp` <= '$end' AND ST_Distance_Sphere(POINT(ontime.routes_by_stop.stop_lon, ontime.routes_by_stop.stop_lat), POINT(ontime.data.lon, ontime.data.lat)) <= 30.48 GROUP BY ontime.routes_by_stop.stop_lat, ontime.routes_by_stop.stop_lon HAVING delay_ratio > 0 ORDER BY `delay_ratio` ASC;";
     if ($route > 0) {
-        $sql = "SELECT ontime.results.stop_lat, ontime.results.stop_lon, (SUM(CASE WHEN ontime.data.dly in ('True', 1) THEN 1 ELSE 0 END) / SUM(CASE WHEN ontime.data.dly in ('False', 0) THEN 1 ELSE 0 END)) * 100 AS delay_ratio FROM ontime.results JOIN ontime.data ON ontime.results.route_id = ontime.data.rt WHERE `rt` = $route AND `tmstmp` >= '$start' AND `tmstmp` <= '$end' AND ST_Distance_Sphere(POINT(ontime.results.stop_lon, ontime.results.stop_lat), POINT(ontime.data.lon, ontime.data.lat)) <= 30.48 GROUP BY ontime.results.stop_lat, ontime.results.stop_lon HAVING delay_ratio > 0 ORDER BY `delay_ratio` ASC;";
+        $sql = "SELECT ontime.routes_by_stop.stop_lat, ontime.routes_by_stop.stop_lon, (SUM(CASE WHEN ontime.data.dly in ('True', 1) THEN 1 ELSE 0 END) / SUM(CASE WHEN ontime.data.dly in ('False', 0) THEN 1 ELSE 0 END)) * 100 AS delay_ratio FROM ontime.routes_by_stop JOIN ontime.data ON ontime.routes_by_stop.route_id = ontime.data.rt WHERE `rt` = $route AND `tmstmp` >= '$start' AND `tmstmp` <= '$end' AND ST_Distance_Sphere(POINT(ontime.routes_by_stop.stop_lon, ontime.routes_by_stop.stop_lat), POINT(ontime.data.lon, ontime.data.lat)) <= 30.48 GROUP BY ontime.routes_by_stop.stop_lat, ontime.routes_by_stop.stop_lon HAVING delay_ratio > 0 ORDER BY `delay_ratio` ASC;";
     }
     $result = $conn->query($sql);
 

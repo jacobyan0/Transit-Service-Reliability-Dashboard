@@ -17,7 +17,7 @@
             <option value="display">Display routes currently running</option>
             <option value="clear">Clear all</option>
             <?php
-              $sql = "SELECT `route_id`, `route_long_name`, `route_color` FROM `routes` ORDER BY `routes`.`route_id` ASC";
+              $sql = "SELECT `route_id`, `route_name`, `route_color` FROM `routes` ORDER BY `routes`.`route_id` ASC";
               $result = $conn->query($sql);
               if ($result->num_rows > 0) {
                 // Output data of each row
@@ -47,7 +47,6 @@
       </div>
       <div class="p-4 flex-1 mb-8">
         <div class="justify-end w-full flex flex-row gap-2">
-            
             <div id="busDataMain" class="flex font-bold text-slate-950/70 text-base flex-row gap-4"></div>
             <div class=" px-2 pt-1 text-2xl text-green-950/70  decoration-2 underline-offset-2 font-extrabold rounded-md">Realtime Operational Status</div>
         </div>

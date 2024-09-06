@@ -36,12 +36,12 @@
 </style>
 
 <script>
-  <?php include 'js/amenityscript.js'?>
+  <?php include 'js/amenities.js'?>
 </script>
 
 <div class="bg-green-700/40 shadow-lg h-5/6 flex flex-row">
   <div class="p-4 w-1/3 overflow-auto text-base-content mb-4">
-    <div id="reportMarker" class="bg-white/90 text-slate-900/80 text-base rounded-lg font-semibold p-3">
+    <div id="reportMarker" class="bg-white/80 text-slate-900/80 text-base rounded-lg font-semibold p-3">
       <div id="defaultInfoText">
         This page allows users to view amenities by bus stop and provide data.</br>
         To view or provide data:
@@ -51,21 +51,20 @@
             <li>Use the Current Location feature to view stops within 1/2 mile of your current location</li>
             <li>Use the View Stops by Route feature</li>
           </ul>
+          <div class="text-sm font-normal mt-2">*Names marked in <span class="text-red-500">red</span> represent stops that have no associated data.</div>
       </div>
-      
-      <form id="stopForm" style="display:none;">
-          <button type="button" class="btn btn-sm hover:bg-[#448b5c]/60 border-0 bg-[#448b5c]/50 btn-circle float-right" onclick="clearForm()">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
-          </button>
-          <label for="stopTitle" class="text-lg font-bold" id="title">Stop Name</label><br>
-          <div class="ml-2 mt-2 mb-4 grid grid-cols-2 gap-4">
+    </div>
+    <div class="bg-white/90 text-slate-900/80 text-base rounded-lg font-semibold p-3 mt-5">
+      <form id="stopForm">
+          <div class="text-lg font-bold mb-2" id="title">Stop Name</div>
+          <div class="ml-2 mb-4 grid grid-cols-2 gap-4">
             <div class="flex flex-row">
               <label for="benches">Benches:</label>
               <input type="number" value="0" onKeyDown="return false" name="benches" class="ml-2 input input-bordered w-1/3 input-sm" id="benches" min="0" max="50"><br>
             </div>
             <div class="flex flex-row">
               <label for="trashcans">Trashcans:</label>
-              <input type="number" value="0" onKeyDown="return false" name="cans" class="input input-bordered w-1/3 ml-2 input-sm" id="cans" min="0" max="50"><br>
+              <input type="number" value="0" onKeyDown="return false" name="trashcans" class="input input-bordered w-1/3 ml-2 input-sm" id="cans" min="0" max="50"><br>
             </div>
             <div class="flex flex-row">
               <label for="shelters">Shelters:</label>
@@ -73,12 +72,12 @@
             </div>
             <div class="flex flex-row">
               <label for="bikeracks">Bikeracks:</label>
-              <input type="number" value="0" onKeyDown="return false" name="racks" class="input input-bordered input-sm w-1/3 ml-2" id="racks" min="0" max="50"><br>
+              <input type="number" value="0" onKeyDown="return false" name="bikeracks" class="input input-bordered input-sm w-1/3 ml-2" id="racks" min="0" max="50"><br>
             </div>
           </div>
           <div class="flex flex-row ml-2">
             <label for="type">Shelter Type:</label>
-            <select id="type" class="select select-bordered select-sm ml-2 max-w-xs">
+            <select id="type" name="type" class="select select-bordered select-sm ml-2 max-w-xs">
               <option value="none" selected>None</option>
               <option value="architectural">Architectural</option>
               <option value="building">Building</option>
@@ -88,10 +87,17 @@
               <option value="wood">Wood</option>
             </select>
           </div>
-          <button type="submit" class="btn hover:bg-[#448b5c]/80 bg-[#448b5c]/75 text-white font-bold border-0 w-full mt-4 btn-sm">SUBMIT</button>
+          <div class="flex flex-row items-center justify-evenly font-bold gap-2 mt-4">
+              <button type="button" onclick="resetAmenities()" class="hover:bg-[#448b5c]/80 bg-[#448b5c]/75 text-white font-bold border-0 px-2 p-1 basis-1/2 rounded-lg">Reset</button>
+              <button type="submit" onclick="submitForm(event)" class="rounded-lg hover:bg-[#448b5c]/80 bg-[#448b5c]/75 text-white font-bold border-0 px-2 p-1 basis-1/2">Submit</button>
+          </div>	
+          <div id="feedback" class="hidden mt-2 text-green-700/70 font-semibold flex w-full items-center justify-center">
+            <div>Your form has been successfully submitted!
+            </div>
+          </div>
       </form>
     </div>
-    <div class="rounded-lg mt-5 bg-white/70 font-semibold text-base p-4 m-auto">
+    <div class="rounded-lg mt-5 bg-white/80 font-semibold text-base p-4 m-auto">
       <label class="input input-sm flex w-full items-center  text-[#448b5c]/70  gap-2">
         <input type="text" class="grow" maxlength="50" onkeyup="searchMarkers()" onkeydown="searchMarkers()" id="stopSearchInput" placeholder="Search" />
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70"><path fill-rule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clip-rule="evenodd" /></svg>
@@ -131,7 +137,6 @@
       </div>
     </div>
   </div> 
-
 </div>
 
 

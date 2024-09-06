@@ -1,6 +1,6 @@
 <?php
 //setting header to json
-require_once('../backend/config.php');
+require_once('../config.php');
 $day = $_GET["date"];
 $route = $_GET["route"];
 $start = substr($day, 0, 16);

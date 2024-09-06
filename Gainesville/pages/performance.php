@@ -20,8 +20,8 @@
       display: none;
     }
     table {
-            border-collapse: collapse;
-            width: 100%;
+      border-collapse: collapse;
+      width: 100%;
     }
     th, td {
         padding: 2px;
@@ -55,7 +55,6 @@
           <tbody id="body" class="border-t-2 border-green-700/50">
           </tbody>
         </table>
-
         <div id="disclaimer" class="hidden text-xs">*The total % of delays is calculated as the percentage of times, in total, that the bus has 
           been delayed over the course of the selected time period.
           Bus status is collected every 15 seconds, which makes the data above only a rough estimate of the exact bus status at any given moment.
@@ -76,7 +75,6 @@
         </div>
         <canvas class="hidden" id="vehicleChart"></canvas>
       </div>
-      
     </div>
   </div>
   <div class="w-1/2 relative ml-4">
@@ -98,7 +96,7 @@
           <option disabled selected value="none">View Data by Route</option>
           <option value="clear">Clear</option>
           <?php
-            $sql = "SELECT `route_id`, `route_long_name`, `route_color` FROM `routes` ORDER BY `routes`.`route_id` ASC";
+            $sql = "SELECT `route_id`, `route_name`, `route_color` FROM `routes` ORDER BY `routes`.`route_id` ASC";
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
               // Output data of each row
@@ -127,6 +125,6 @@
   </div> 
 </div>
 <script>
-    <?php include 'js/perscript.js'?>
+    <?php include 'js/performance.js'?>
 </script>
 

@@ -8,53 +8,56 @@ var blueStop = L.icon({
 
 var geoDisplayed = false;
 var reportType;
-var formType = "";
+var formType = "general";
 
 //function called when selecting between "leave feedback" and "report an incident"
-function openReport(type) {
+function selectReport(type) {
     //form is reset everytime a new selection is made
     resetForm();
+    clearAll();
+    removeAllDisplay();
     document.getElementById("toSubmit").style.display = "flex";
-    document.getElementById("reportType").value = type;
-    if (type == "general") {
-        leaveFeedback();
+    document.getElementById("reportSelection").value = type;
+    document.getElementById("default").style.display = "block";
+    document.getElementById("formDropdown").style.display = "block";
+    document.getElementById("formSelection").value = formType;
+    reportType = type;
+    document.getElementById(type).style.display = "block";
+    if (formType != "general") {
+        document.getElementById(formType).style.display = "block";
     }
-    if (type == "incident") {
-        incidentReport();
-    }
-    if (formType != "") {
-        document.getElementById("typeSelection").value = formType;
+    else {
+        viewGeo();
     }
 }
 
-//function called when user selects to leave feedback
-function leaveFeedback() {
+//helper function -> removes all form displays
+function removeAllDisplay() {
+    document.getElementById("stop").style.display = "none";
+    document.getElementById("route").style.display = "none";
+    document.getElementById("incident").style.display = "none";
+    document.getElementById("general").style.display = "none";
+    document.getElementById("default").style.display = "none";
+}
+//function called when selecting between "general" or "stop" or "route" form
+function selectForm(type) {
+    resetForm();
     clearAll();
-    document.getElementById("allForms").style.display = "block";
-    if (document.getElementById("incident").style.display = "block") {
-        document.getElementById("incident").style.display = "none";
-        document.getElementById("general").style.display = "block";
+    removeAllDisplay();
+    document.getElementById("formSelection").value = type;
+    formType = type;
+    if (formType != "general") {
+        document.getElementById(formType).style.display = "block";
     }
-    document.getElementById("formType").style.display = "block";
-    viewGeo();
-    reportType = "general";
+    else {
+        viewGeo();
+    }
+    document.getElementById("default").style.display = "block";
+    document.getElementById(reportType).style.display = "block";
+    document.getElementById("reportSelection").value = reportType;
 }
 
-//function called when user selects to report an incident
-function incidentReport() {
-    clearAll();
-    document.getElementById("allForms").style.display = "block";
-    if (document.getElementById("general").style.display = "block") {
-        document.getElementById("general").style.display = "none";
-        document.getElementById("incident").style.display = "block";
-    }
-    document.getElementById("formType").style.display = "block";
-    viewGeo();
-    reportType = "incident";
-
-}
-
-//function called to reset the feedback form
+//helper function -> resets feedback form
 function resetForm() {
     map.removeLayer(reportLocation);
     document.getElementById("feedbackForm").reset();
@@ -64,8 +67,12 @@ var geoMarker;
 var reportLocation = L.marker([29.652, -82.339], { draggable: true });
 //user is able to click on the map to drop a marker only when the form is open
 document.addEventListener("DOMContentLoaded", function() {
-    map.on('click', function(e) {       
-        if (document.getElementById("formType").style.display == "block") {
+    map.on('click', function(e) {   
+        clearGeo();  
+        if (reportLocation) {
+            map.removeLayer(reportLocation);
+        }  
+        if (document.getElementById("formSelection").style.display == "block") {
           reportLocation.setLatLng(e.latlng);
           reportLocation.addTo(map);
           map.setView(e.latlng, 15);
@@ -77,47 +84,32 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-//function called when selecting between "general" or "stop" or "route" form
-function openForm(value) {
-    resetForm();
-    clearAll();
-    document.getElementById("typeSelection").value = value;
-    formType = value;
-    document.getElementById("stopForm").style.display = "none";
-    document.getElementById("routeForm").style.display = "none";
-    document.getElementById("incident").style.display = "none";
-    document.getElementById("general").style.display = "none";
-    if (value == "stop") {
-        document.getElementById("stopForm").style.display = "block";
+//helper function -> removes geocoder feature and search value
+function clearGeo() {
+    const geoInput = document.querySelector('.leaflet-control-geocoder input');
+    if (geoInput) {
+        geoInput.value = "";
     }
-    if (value == "route") {
-        document.getElementById("routeForm").style.display = "block";
-    }
-    document.getElementById("allForms").style.display = "block";
-    if (reportType == "incident") {
-        document.getElementById("incident").style.display = "block";
-    }
-    if (reportType == "general") {
-        document.getElementById("general").style.display = "block";
-    }
-    document.getElementById("reportType").value = reportType;
 }
-
+var geocoder;
+//initializes and displays geocoder
 function viewGeo() {
-    if (!geoDisplayed) {
-        geocoder = L.Control.geocoder({
-            bbox: L.latLngBounds(L.latLng(29.5808, -82.4735), L.latLng(29.7268, -82.2144)),
-            collapsed: false,
-            position: 'topleft'
-        }).on('markgeocode', function (event) {
-            const { center, name } = event.geocode;
-            document.getElementById("location").value = name;
-            reportLocation.setLatLng(center);
-            map.setView(center, 15);
-            openForm(center);
-        }).addTo(map);
-    }
-    geoDisplayed = true;
+    geocoder = L.Control.geocoder({
+        bbox: L.latLngBounds(L.latLng(29.5808, -82.4735), L.latLng(29.7268, -82.2144)),
+        collapsed: false,
+        position: 'topleft',
+        defaultMarkGeocode: false 
+    }).on('markgeocode', function (event) {
+        const { center, name } = event.geocode;
+        map.setView(center, 15);
+        //selectForm("general");
+        document.getElementById('location').value = name;
+        if (reportLocation) {
+            map.removeLayer(reportLocation);
+        }  
+        reportLocation.addTo(map);
+        reportLocation.setLatLng(center);
+    }).addTo(map);
 }
 
 var singleRoute = L.geoJSON().addTo(map);
@@ -165,6 +157,13 @@ function stopsAlongRoute(value) {
                 stop_markers[stop].addTo(map);
             });
         }
+        else if (value == "clear") {
+            if (bus_stops) {
+                bus_stops.forEach((stop) => {
+                    stop_markers[stop].removeFrom(map);
+                });
+            }
+        }
         else {
             currentRouteForStops = value;
             displayRouteStops(value);
@@ -187,7 +186,7 @@ function stopsAlongRoute(value) {
 function displayRouteStops(routeID) {
     $.ajax(
       {
-        url: "realtime_data/stops.php",
+        url: "backend/stops.php",
         type: 'POST',
         dataType: 'text',
         data: {route: routeID},
@@ -226,7 +225,9 @@ function showAll() {
                 });
                 marker.on('click', function (e) {
                     document.getElementById('location').value = "Stop #" + feature.properties.stop_id + ": " + feature.properties.stop_name;
-                    reportLocation.setLatLng(this.getLatLng());
+                    if (reportLocation) {
+                        map.removeLayer(reportLocation);
+                    }
                 });
                 bus_stops.push(feature.properties.stop_id);
                 stop_markers[feature.properties.stop_id] = marker;
@@ -234,24 +235,6 @@ function showAll() {
         })
     });
 }
-
-/*
-function markersThatOverlap(featureGeometry) {
-    if (busStopLayerByRoute) {
-        map.removeLayer(busStopLayerByRoute);
-      }
-    const line = turf.lineString(featureGeometry.coordinates);
-    bus_stops.forEach((stop)=> {
-      var markerLatLng = stop_markers[stop].getLatLng();
-      const markerPoint = turf.point([markerLatLng.lng, markerLatLng.lat]);
-
-      const dist = turf.pointToLineDistance(markerPoint, line, { units: 'miles' });
-
-      if (dist !== undefined && dist <= 0.025) {
-        stop_markers[stop].addTo(map);
-    }
-    });
-}*/
 
 //called when user uses the "search for stops" feature
 function searchMarkers() {
@@ -269,8 +252,12 @@ function searchMarkers() {
     }, 100);
 }
 
-//called to reset the map
+//helper function -> resets the map, clears all layers, resets options
 function clearAll() {
+    clearGeo();
+    if (geocoder) {
+        map.removeControl(geocoder);
+    }
     map.setView([29.653, -82.351], 13);
     if (bus_stops) {
         bus_stops.forEach((stop) => {
@@ -285,6 +272,9 @@ function clearAll() {
     }
     if (singleRoute) {
         map.removeLayer(singleRoute);
+    }
+    if (reportLocation) {
+        map.removeLayer(reportLocation);
     }
     $('#routeselection').get(0).selectedIndex = 0;
     $('#stoprouteselection').get(0).selectedIndex = 0;

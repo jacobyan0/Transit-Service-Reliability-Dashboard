@@ -1,11 +1,11 @@
 <?php
-    require_once('../backend/config.php');
+    require_once('../config.php');
     $route = $_POST["route"];
    
     $sql = "SELECT * FROM `delay_ratio` HAVING ratio > 0 ORDER BY `delay_ratio`.`ratio` ASC;";
     if ($route > 0) {
-        $sql = "SELECT * FROM `delay_ratio` JOIN results ON ROUND(results.stop_lat, 10) = ROUND(delay_ratio.lat, 10) AND ROUND(results.stop_lon, 10) = ROUND(delay_ratio.lon, 10)
-            WHERE results.route_id = $route HAVING ratio > 0;";
+        $sql = "SELECT * FROM `delay_ratio` JOIN routes_by_stop ON ROUND(routes_by_stop.stop_lat, 10) = ROUND(delay_ratio.lat, 10) AND ROUND(routes_by_stop.stop_lon, 10) = ROUND(delay_ratio.lon, 10)
+            WHERE routes_by_stop.route_id = $route HAVING ratio > 0;";
     }
     $result = $conn->query($sql);
 

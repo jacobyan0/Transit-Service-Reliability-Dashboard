@@ -69,8 +69,8 @@ def gatherData(num):
         if sleeptime > 0:
             time.sleep(sleeptime)
         df=pd.DataFrame(list6)
-        #if list5:
-        #    for v in list5:
+        #if list6:
+        #    for v in list6:
         #        sql = "INSERT ignore INTO data (vid, rt, tmstmp, lat, lon, des, dly) VALUES (%s, %s, %s, %s, %s, %s, %s)"
         #        val = (v['vid'], v['rt'], v['tmstmp'], v['lat'], v['lon'], v['des'], v['dly'])
         #        mycursor.execute(sql, val)

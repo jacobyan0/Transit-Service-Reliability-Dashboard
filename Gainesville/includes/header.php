@@ -87,14 +87,14 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
       <a href="index.php?page=performance"><h1 class="truncatetext underline-offset-4 decoration-2 text-base cursor-pointer rounded-md px-2 <?php if ($page === 'performance') echo 'text-green-700/80 underline'; else echo 'hover:underline'?>">Performance Tracking</h1></a>
       
       <details class="dropdown">
-        <summary id="amenityLink" class="truncatetext underline-offset-4 decoration-2 text-base cursor-pointer rounded-md px-2 <?php if ($page === 'bus-census' || $page === 'amenity-data') echo 'text-green-700/80 underline'; else echo 'hover:underline'?>">Bus Stop Amenities</summary>
+        <summary id="amenityLink" class="truncatetext underline-offset-4 decoration-2 text-base cursor-pointer rounded-md px-2 <?php if ($page === 'crowdsourcing' || $page === 'system_data') echo 'text-green-700/80 underline'; else echo 'hover:underline'?>">Bus Stop Amenities</summary>
         <ul class="menu dropdown-content bg-base-100 mt-2 rounded-box z-[1] w-52 p-2 shadow">
-          <li class="mb-1 <?php if ($page === 'amenity-data') echo 'bg-green-600/30 rounded-lg text-green-900/80';?>"><a id="data" href="index.php?page=amenity-data"><h1>View Amenity Data</h1></a></li>
-          <li class="<?php if ($page === 'bus-census') echo 'bg-green-600/30 rounded-lg text-green-900/80';?>"><a id="report" href="index.php?page=bus-census"><h1>Report on Amenities</h1></a></li>
+          <li class="mb-1 <?php if ($page === 'system_data') echo 'bg-green-600/30 rounded-lg text-green-900/80';?>"><a id="data" href="index.php?page=system_data"><h1>View System Data</h1></a></li>
+          <li class="<?php if ($page === 'crowdsourcing') echo 'bg-green-600/30 rounded-lg text-green-900/80';?>"><a id="report" href="index.php?page=crowdsourcing"><h1>Crowdsourcing Tool</h1></a></li>
         </ul>
       </details>
       
-      <a href="index.php?page=reportform"><h1 class="truncatetext underline-offset-4 decoration-2 text-base cursor-pointer rounded-md px-2 <?php if ($page === 'reportform') echo 'text-green-700/80 underline'; else echo 'hover:underline'?>">User Feedback</h1></a>
+      <a href="index.php?page=user_feedback"><h1 class="truncatetext underline-offset-4 decoration-2 text-base cursor-pointer rounded-md px-2 <?php if ($page === 'user_feedback') echo 'text-green-700/80 underline'; else echo 'hover:underline'?>">User Feedback</h1></a>
       <h1 onclick="openAbout()" class="truncatetext underline-offset-4 decoration-2 text-base cursor-pointer rounded-md px-2 <?php if ($page === 'about') echo 'text-green-700/80 underline'; else echo 'hover:underline'?>">About</h1>
     </div>
     <div id="timeMain" class="whitespace-nowrap pl-2 font-bold text-slate-900/70 mr-2">1/01/2024 10:25:50 AM</div>
