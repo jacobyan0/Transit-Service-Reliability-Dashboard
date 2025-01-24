@@ -1,0 +1,3310 @@
+[
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727392257904\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":720,\"totalInferenceCount\":1},\"labelStats\":{\"nLabelsTotal\":0,\"nLabelsCorrect\":0,\"nLabelsIncorrect\":0,\"nLabelsManuallyPlaced\":1,\"locationToVerifiedLabels\":{\"\":[{\"id\":\"signage-0\",\"labelType\":\"signage\",\"heading\":200.3271698390648,\"pitch\":-9.07568144473801,\"originalX\":666,\"originalY\":273,\"left\":666.0000000000001,\"top\":268,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":true,\"confidence\":1,\"panoID\":\"boHeXKh1adp1-dT7seFIvw\"}]}},\"timestamp\":1727392270583,\"dataIDX\":-1}",
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727392415007\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":609,\"totalInferenceCount\":1},\"labelStats\":{\"nLabelsTotal\":0,\"nLabelsCorrect\":0,\"nLabelsIncorrect\":0,\"nLabelsManuallyPlaced\":1,\"locationToVerifiedLabels\":{\"\":[{\"id\":\"signage-0\",\"labelType\":\"signage\",\"heading\":186.20822761058778,\"pitch\":-10.663785130540447,\"originalX\":742,\"originalY\":328,\"left\":742.0000000000001,\"top\":323,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":true,\"confidence\":1,\"panoID\":\"Bo9n1mBkI5FEl-FALUCWCQ\"}]}},\"timestamp\":1727392426769,\"dataIDX\":-1}",
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727392507440\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":637,\"totalInferenceCount\":1},\"labelStats\":{\"nLabelsTotal\":0,\"nLabelsCorrect\":0,\"nLabelsIncorrect\":0,\"nLabelsManuallyPlaced\":4,\"locationToVerifiedLabels\":{\"\":[{\"id\":\"signage-0\",\"labelType\":\"signage\",\"heading\":197.31978828570203,\"pitch\":-9.775853357667614,\"originalX\":697,\"originalY\":291,\"left\":697.0000000000001,\"top\":286,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":true,\"confidence\":1,\"panoID\":\"jOvLRW9lITwIbwNWcXY0iw\"},{\"id\":\"seating-0\",\"labelType\":\"seating\",\"heading\":197.31978828570203,\"pitch\":-9.775853357667614,\"originalX\":890,\"originalY\":508,\"left\":889.9999999999999,\"top\":502.99999999999994,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":true,\"confidence\":1,\"panoID\":\"jOvLRW9lITwIbwNWcXY0iw\"},{\"id\":\"shelter-0\",\"labelType\":\"shelter\",\"heading\":197.31978828570203,\"pitch\":-9.775853357667614,\"originalX\":589,\"originalY\":65,\"left\":589.0000000000001,\"top\":60.00000000000006,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":true,\"confidence\":1,\"panoID\":\"jOvLRW9lITwIbwNWcXY0iw\"},{\"id\":\"trashcan-0\",\"labelType\":\"trashcan\",\"heading\":197.31978828570203,\"pitch\":-9.775853357667614,\"originalX\":744,\"originalY\":501,\"left\":743.9999999999999,\"top\":495.99999999999994,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":true,\"confidence\":1,\"panoID\":\"jOvLRW9lITwIbwNWcXY0iw\"}]}},\"timestamp\":1727392524888,\"dataIDX\":-1}",
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727394667431\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":0,\"totalInferenceCount\":0},\"labelStats\":{\"nLabelsTotal\":0,\"nLabelsCorrect\":0,\"nLabelsIncorrect\":0,\"nLabelsManuallyPlaced\":0,\"locationToVerifiedLabels\":{\"\":[]}},\"timestamp\":1727394680252,\"dataIDX\":-1}",
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727394730584\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":0,\"totalInferenceCount\":0},\"labelStats\":{\"nLabelsTotal\":0,\"nLabelsCorrect\":0,\"nLabelsIncorrect\":0,\"nLabelsManuallyPlaced\":0,\"locationToVerifiedLabels\":{\"\":[]}},\"timestamp\":1727394734353,\"dataIDX\":-1}",
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727394766267\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":0,\"totalInferenceCount\":0},\"labelStats\":{\"nLabelsTotal\":0,\"nLabelsCorrect\":0,\"nLabelsIncorrect\":0,\"nLabelsManuallyPlaced\":0,\"locationToVerifiedLabels\":{\"\":[]}},\"timestamp\":1727394771572,\"dataIDX\":-1}",
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727395263500\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":0,\"totalInferenceCount\":0},\"labelStats\":{\"nLabelsTotal\":0,\"nLabelsCorrect\":0,\"nLabelsIncorrect\":0,\"nLabelsManuallyPlaced\":0,\"locationToVerifiedLabels\":{\"\":[]}},\"timestamp\":1727395267296,\"dataIDX\":-1}",
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727395321601\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":1032,\"totalInferenceCount\":1},\"labelStats\":{\"nLabelsTotal\":0,\"nLabelsCorrect\":0,\"nLabelsIncorrect\":0,\"nLabelsManuallyPlaced\":1,\"locationToVerifiedLabels\":{\"\":[{\"id\":\"signage-0\",\"labelType\":\"signage\",\"heading\":188.2808828762814,\"pitch\":1.5601054462169799,\"originalX\":743,\"originalY\":485,\"left\":742.9999999999995,\"top\":480,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":true,\"confidence\":1,\"panoID\":\"pLWLp6glUlpzURjdkFMaMA\"}]}},\"timestamp\":1727395331489,\"dataIDX\":-1}",
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727395358119\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":1468,\"totalInferenceCount\":1},\"labelStats\":{\"nLabelsTotal\":0,\"nLabelsCorrect\":0,\"nLabelsIncorrect\":0,\"nLabelsManuallyPlaced\":3,\"locationToVerifiedLabels\":{\"\":[{\"id\":\"seating-0\",\"labelType\":\"seating\",\"heading\":318.39664933038296,\"pitch\":-13.03954608972802,\"originalX\":731,\"originalY\":608,\"left\":731,\"top\":603,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":true,\"confidence\":1,\"panoID\":\"s4Dvr0ZQLNrHds5Amfc5Bg\"},{\"id\":\"signage-0\",\"labelType\":\"signage\",\"heading\":318.39664933038296,\"pitch\":-13.03954608972802,\"originalX\":620,\"originalY\":396,\"left\":620,\"top\":391,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":true,\"confidence\":1,\"panoID\":\"s4Dvr0ZQLNrHds5Amfc5Bg\"},{\"id\":\"trashcan-0\",\"labelType\":\"trashcan\",\"heading\":318.39664933038296,\"pitch\":-13.03954608972802,\"originalX\":615,\"originalY\":671,\"left\":615,\"top\":666,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":true,\"confidence\":1,\"panoID\":\"s4Dvr0ZQLNrHds5Amfc5Bg\"}]}},\"timestamp\":1727395374076,\"dataIDX\":-1}",
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727447204653\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":0,\"totalInferenceCount\":0},\"labelStats\":{\"nLabelsTotal\":0,\"nLabelsCorrect\":0,\"nLabelsIncorrect\":0,\"nLabelsManuallyPlaced\":0,\"locationToVerifiedLabels\":{\"\":[]}},\"timestamp\":1727447210930,\"dataIDX\":-1}",
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727447241855\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":0,\"totalInferenceCount\":0},\"labelStats\":{\"nLabelsTotal\":0,\"nLabelsCorrect\":0,\"nLabelsIncorrect\":0,\"nLabelsManuallyPlaced\":0,\"locationToVerifiedLabels\":{\"\":[]}},\"timestamp\":1727447244962,\"dataIDX\":-1}",
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727447664943\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":1909,\"totalInferenceCount\":2},\"labelStats\":{\"nLabelsTotal\":0,\"nLabelsCorrect\":0,\"nLabelsIncorrect\":0,\"nLabelsManuallyPlaced\":1,\"locationToVerifiedLabels\":{\"\":[{\"id\":\"signage-0\",\"labelType\":\"signage\",\"heading\":191.34313975358492,\"pitch\":-1.4638879175766846,\"originalX\":595,\"originalY\":447,\"left\":577.4634882708735,\"top\":357.21339062455036,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":true,\"confidence\":1,\"panoID\":\"3JBMPNWMMo77Hw2HEfS81Q\"}]}},\"timestamp\":1727447702221,\"dataIDX\":-1}",
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727447973745\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":0,\"totalInferenceCount\":0},\"labelStats\":{\"nLabelsTotal\":0,\"nLabelsCorrect\":0,\"nLabelsIncorrect\":0,\"nLabelsManuallyPlaced\":0,\"locationToVerifiedLabels\":{\"\":[]}},\"timestamp\":1727447978583,\"dataIDX\":-1}",
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727447986641\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":14277,\"totalInferenceCount\":16},\"labelStats\":{\"nLabelsTotal\":0,\"nLabelsCorrect\":0,\"nLabelsIncorrect\":0,\"nLabelsManuallyPlaced\":0,\"locationToVerifiedLabels\":{\"\":[]}},\"timestamp\":1727448124947,\"dataIDX\":-1}",
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727448296198\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":11405,\"totalInferenceCount\":13},\"labelStats\":{\"nLabelsTotal\":0,\"nLabelsCorrect\":0,\"nLabelsIncorrect\":0,\"nLabelsManuallyPlaced\":0,\"locationToVerifiedLabels\":{\"\":[]}},\"timestamp\":1727448334243,\"dataIDX\":-1}",
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727448351614\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":975,\"totalInferenceCount\":1},\"labelStats\":{\"nLabelsTotal\":0,\"nLabelsCorrect\":0,\"nLabelsIncorrect\":0,\"nLabelsManuallyPlaced\":1,\"locationToVerifiedLabels\":{\"\":[{\"id\":\"signage-0\",\"labelType\":\"signage\",\"heading\":49.11324646381535,\"pitch\":0.14397450852116833,\"originalX\":761,\"originalY\":351,\"left\":760.9999999999995,\"top\":346,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":true,\"confidence\":1,\"panoID\":\"RphKdHCM2PqoB3kD4UM5rA\"}]}},\"timestamp\":1727448390926,\"dataIDX\":-1}",
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727448434829\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":2862,\"totalInferenceCount\":3},\"labelStats\":{\"nLabelsTotal\":4,\"nLabelsCorrect\":4,\"nLabelsIncorrect\":0,\"nLabelsManuallyPlaced\":2,\"locationToVerifiedLabels\":{\"\":[{\"id\":\"shelter-0\",\"labelType\":\"shelter\",\"heading\":294.35399198100725,\"pitch\":-4.039046403510923,\"originalX\":818.7173507690429,\"originalY\":501.35070433616636,\"left\":818.7173507690428,\"top\":496.35070433616636,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":false,\"confidence\":\"0.86\",\"panoID\":\"J0tzrRK-3heQzhoZWkPOmA\",\"originalBoundingBox\":[633.1637059211731,382.0323152542114,371.1072896957397,238.63677816390992],\"originalPitch\":-4.039046403510923,\"originalHeading\":294.35399198100725,\"timestamp\":1727448445979},{\"id\":\"trashcan-0\",\"labelType\":\"trashcan\",\"heading\":294.35399198100725,\"pitch\":-4.039046403510923,\"originalX\":648,\"originalY\":535,\"left\":648,\"top\":530,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":true,\"confidence\":1,\"panoID\":\"J0tzrRK-3heQzhoZWkPOmA\"},{\"id\":\"seating-1\",\"labelType\":\"seating\",\"heading\":226.4035729574496,\"pitch\":-6.040503481663308,\"originalX\":637.4210380554199,\"originalY\":607.338349533081,\"left\":637.4210380554198,\"top\":602.338349533081,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":false,\"confidence\":\"0.42\",\"panoID\":\"raDX3VL0I7iRRTlRs-Cw3g\",\"originalBoundingBox\":[574.4237186431884,565.7688368797302,125.99463882446288,83.13902530670165],\"originalPitch\":-6.040503481663308,\"originalHeading\":226.4035729574496,\"timestamp\":1727448477393},{\"id\":\"trashcan-2\",\"labelType\":\"trashcan\",\"heading\":226.4035729574496,\"pitch\":-6.040503481663308,\"originalX\":553.6794887542724,\"originalY\":517.5682770490647,\"left\":553.6794887542726,\"top\":512.5682770490647,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":false,\"confidence\":\"0.96\",\"panoID\":\"raDX3VL0I7iRRTlRs-Cw3g\",\"originalBoundingBox\":[520.705875647068,464.63176188468935,65.94722621440887,105.87303032875062],\"originalPitch\":-6.040503481663308,\"originalHeading\":226.4035729574496,\"timestamp\":1727448479045},{\"id\":\"shelter-2\",\"labelType\":\"shelter\",\"heading\":226.4035729574496,\"pitch\":-6.040503481663308,\"originalX\":832.8549090385436,\"originalY\":512.7698738574982,\"left\":832.8549090385436,\"top\":507.7698738574981,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":false,\"confidence\":\"0.95\",\"panoID\":\"raDX3VL0I7iRRTlRs-Cw3g\",\"originalBoundingBox\":[489.96595907211304,281.74762201309204,685.7778999328613,462.04450368881226],\"originalPitch\":-6.040503481663308,\"originalHeading\":226.4035729574496,\"timestamp\":1727448480993},{\"id\":\"signage-0\",\"labelType\":\"signage\",\"heading\":226.4035729574496,\"pitch\":-6.040503481663308,\"originalX\":358,\"originalY\":310,\"left\":357.9999999999998,\"top\":305,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":true,\"confidence\":1,\"panoID\":\"raDX3VL0I7iRRTlRs-Cw3g\"}]}},\"timestamp\":1727448504661,\"dataIDX\":-1}",
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727897448096\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":4105,\"totalInferenceCount\":4},\"labelStats\":{\"nLabelsTotal\":0,\"nLabelsCorrect\":0,\"nLabelsIncorrect\":0,\"nLabelsManuallyPlaced\":0,\"locationToVerifiedLabels\":{\"\":[]}},\"timestamp\":1727897464407,\"dataIDX\":-1}",
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727897511855\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":0,\"totalInferenceCount\":0},\"labelStats\":{\"nLabelsTotal\":0,\"nLabelsCorrect\":0,\"nLabelsIncorrect\":0,\"nLabelsManuallyPlaced\":0,\"locationToVerifiedLabels\":{\"\":[]}},\"timestamp\":1727897514010,\"dataIDX\":-1}",
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727897527682\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":1055,\"totalInferenceCount\":1},\"labelStats\":{\"nLabelsTotal\":4,\"nLabelsCorrect\":4,\"nLabelsIncorrect\":0,\"nLabelsManuallyPlaced\":0,\"locationToVerifiedLabels\":{\"\":[{\"id\":\"signage-0\",\"labelType\":\"signage\",\"heading\":213.83002555862424,\"pitch\":-11.565770881027717,\"originalX\":427.3537403106689,\"originalY\":334.9549877643586,\"left\":427.35374031066914,\"top\":329.9549877643586,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":false,\"confidence\":\"0.85\",\"panoID\":\"NItssZZrb0mmYWD7HyjXPw\",\"originalBoundingBox\":[412.1751467347145,302.79203606843953,30.357187151908875,64.32590339183808],\"originalPitch\":-11.565770881027717,\"originalHeading\":213.83002555862424,\"timestamp\":1727897541757},{\"id\":\"shelter-0\",\"labelType\":\"shelter\",\"heading\":213.83002555862424,\"pitch\":-11.565770881027717,\"originalX\":711.5708882331847,\"originalY\":422.6189457178116,\"left\":711.5708882331849,\"top\":417.6189457178115,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":false,\"confidence\":\"0.97\",\"panoID\":\"NItssZZrb0mmYWD7HyjXPw\",\"originalBoundingBox\":[506.72554801702495,297.8031221389771,409.69068043231965,249.63164715766905],\"originalPitch\":-11.565770881027717,\"originalHeading\":213.83002555862424,\"timestamp\":1727897544672},{\"id\":\"trashcan-0\",\"labelType\":\"trashcan\",\"heading\":213.83002555862424,\"pitch\":-11.565770881027717,\"originalX\":897.9219952106475,\"originalY\":467.3424565792084,\"left\":897.9219952106475,\"top\":462.3424565792083,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":false,\"confidence\":\"0.90\",\"panoID\":\"NItssZZrb0mmYWD7HyjXPw\",\"originalBoundingBox\":[874.4614990711211,431.73724497556685,46.92099227905273,71.21042320728301],\"originalPitch\":-11.565770881027717,\"originalHeading\":213.83002555862424,\"timestamp\":1727897547112},{\"id\":\"seating-0\",\"labelType\":\"seating\",\"heading\":213.83002555862424,\"pitch\":-11.565770881027717,\"originalX\":646.7429146766663,\"originalY\":511.44318022727964,\"left\":646.7429146766661,\"top\":506.44318022727964,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":false,\"confidence\":\"0.82\",\"panoID\":\"NItssZZrb0mmYWD7HyjXPw\",\"originalBoundingBox\":[593.7863352775573,479.5903121590614,105.91315879821776,63.705736136436464],\"originalPitch\":-11.565770881027717,\"originalHeading\":213.83002555862424,\"timestamp\":1727897549435}]}},\"timestamp\":1727897626013,\"dataIDX\":-1}",
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727897760541\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":5653,\"totalInferenceCount\":6},\"labelStats\":{\"nLabelsTotal\":0,\"nLabelsCorrect\":0,\"nLabelsIncorrect\":0,\"nLabelsManuallyPlaced\":0,\"locationToVerifiedLabels\":{\"\":[]}},\"timestamp\":1727897804189,\"dataIDX\":-1}",
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727897894279\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":2814,\"totalInferenceCount\":3},\"labelStats\":{\"nLabelsTotal\":2,\"nLabelsCorrect\":1,\"nLabelsIncorrect\":1,\"nLabelsManuallyPlaced\":2,\"locationToVerifiedLabels\":{\"\":[{\"id\":\"signage-0\",\"labelType\":\"signage\",\"heading\":82.81605857966173,\"pitch\":-10.735286471394488,\"originalX\":862.3121903896332,\"originalY\":297.81300501823426,\"left\":862.3121903896334,\"top\":292.8130050182343,\"verificationState\":\"VERIFIED_INCORRECT\",\"isHumanPlaced\":false,\"confidence\":\"0.63\",\"panoID\":\"4YcMdaBb0TcQShPD8Zp_2w\",\"originalBoundingBox\":[855.5312086582184,279.77220690250397,13.561963462829588,36.08159623146057],\"originalPitch\":-10.735286471394488,\"originalHeading\":82.81605857966173,\"timestamp\":1727897917076},{\"id\":\"seating-0\",\"labelType\":\"seating\",\"heading\":82.81605857966173,\"pitch\":-10.735286471394488,\"originalX\":658.2705305576324,\"originalY\":551.590453696251,\"left\":658.2705305576324,\"top\":546.590453696251,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":false,\"confidence\":\"0.67\",\"panoID\":\"4YcMdaBb0TcQShPD8Zp_2w\",\"originalBoundingBox\":[562.0721094131469,516.701601600647,192.39684228897093,69.77770419120789],\"originalPitch\":-10.735286471394488,\"originalHeading\":82.81605857966173,\"timestamp\":1727897920932},{\"id\":\"signage-1\",\"labelType\":\"signage\",\"heading\":82.81605857966173,\"pitch\":-10.735286471394488,\"originalX\":211,\"originalY\":351,\"left\":211.0000000000001,\"top\":346.0000000000001,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":true,\"confidence\":1,\"panoID\":\"4YcMdaBb0TcQShPD8Zp_2w\"},{\"id\":\"trashcan-1\",\"labelType\":\"trashcan\",\"heading\":82.81605857966173,\"pitch\":-10.735286471394488,\"originalX\":809,\"originalY\":527,\"left\":809.0000000000002,\"top\":522,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":true,\"confidence\":1,\"panoID\":\"4YcMdaBb0TcQShPD8Zp_2w\"}]}},\"timestamp\":1727897930978,\"dataIDX\":-1}",
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727898271031\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":6604,\"totalInferenceCount\":7},\"labelStats\":{\"nLabelsTotal\":4,\"nLabelsCorrect\":4,\"nLabelsIncorrect\":0,\"nLabelsManuallyPlaced\":4,\"locationToVerifiedLabels\":{\"\":[{\"id\":\"seating-1\",\"labelType\":\"seating\",\"heading\":266.61569844559637,\"pitch\":-6.574314233805481,\"originalX\":823.3587223052978,\"originalY\":552.2068734169006,\"left\":823.3587223052975,\"top\":547.2068734169006,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":false,\"confidence\":\"0.66\",\"panoID\":\"vpJ6_yEj5Sc2ANM2Vy2Mig\",\"originalBoundingBox\":[762.4912628650665,511.2788027405739,121.73491888046264,81.85614135265351],\"originalPitch\":-6.574314233805481,\"originalHeading\":266.61569844559637,\"timestamp\":1727898299233},{\"id\":\"seating-0\",\"labelType\":\"seating\",\"heading\":266.61569844559637,\"pitch\":-6.574314233805481,\"originalX\":723.8513937950133,\"originalY\":600.7668981075286,\"left\":723.8513937950131,\"top\":595.7668981075285,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":false,\"confidence\":\"0.49\",\"panoID\":\"vpJ6_yEj5Sc2ANM2Vy2Mig\",\"originalBoundingBox\":[630.7788477659225,558.4502663135528,186.14509205818175,84.63326358795166],\"originalPitch\":-6.574314233805481,\"originalHeading\":266.61569844559637,\"timestamp\":1727898300352},{\"id\":\"shelter-0\",\"labelType\":\"shelter\",\"heading\":266.61569844559637,\"pitch\":-6.574314233805481,\"originalX\":450,\"originalY\":233,\"left\":449.99999999999994,\"top\":228.00000000000006,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":true,\"confidence\":1,\"panoID\":\"vpJ6_yEj5Sc2ANM2Vy2Mig\"},{\"id\":\"trashcan-0\",\"labelType\":\"trashcan\",\"heading\":266.61569844559637,\"pitch\":-6.574314233805481,\"originalX\":466,\"originalY\":516,\"left\":466.0000000000002,\"top\":511,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":true,\"confidence\":1,\"panoID\":\"vpJ6_yEj5Sc2ANM2Vy2Mig\"},{\"id\":\"trashcan-1\",\"labelType\":\"trashcan\",\"heading\":303.1028512706225,\"pitch\":-4.794502828309504,\"originalX\":529,\"originalY\":487,\"left\":529,\"top\":482,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":true,\"confidence\":1,\"panoID\":\"ubrLHStf5vnb70U0d4YWbQ\"},{\"id\":\"signage-0\",\"labelType\":\"signage\",\"heading\":303.1028512706225,\"pitch\":-4.794502828309504,\"originalX\":308,\"originalY\":418,\"left\":862.7457372453035,\"top\":440.3280241353751,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":true,\"confidence\":1,\"panoID\":\"vpJ6_yEj5Sc2ANM2Vy2Mig\"},{\"id\":\"seating-2\",\"labelType\":\"seating\",\"heading\":260.6462057722081,\"pitch\":-2.395501072364155,\"originalX\":798.3358026504517,\"originalY\":663.1643466472626,\"left\":798.3358026504517,\"top\":658.1643466472626,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":false,\"confidence\":\"0.95\",\"panoID\":\"vpJ6_yEj5Sc2ANM2Vy2Mig\",\"originalBoundingBox\":[703.1013270378113,621.8058898448944,190.46895122528076,82.71691360473633],\"originalPitch\":-2.395501072364155,\"originalHeading\":260.6462057722081,\"timestamp\":1727898337175},{\"id\":\"seating-3\",\"labelType\":\"seating\",\"heading\":260.6462057722081,\"pitch\":-2.395501072364155,\"originalX\":899.1438241958618,\"originalY\":609.4671482563018,\"left\":899.1438241958617,\"top\":604.4671482563018,\"verificationState\":\"VERIFIED_CORRECT\",\"isHumanPlaced\":false,\"confidence\":\"0.65\",\"panoID\":\"vpJ6_yEj5Sc2ANM2Vy2Mig\",\"originalBoundingBox\":[831.4710074663162,563.8118278026581,135.34563345909118,91.31064090728759],\"originalPitch\":-2.395501072364155,\"originalHeading\":260.6462057722081,\"timestamp\":1727898338196}]}},\"timestamp\":1727898341792,\"dataIDX\":-1}",
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727922649063\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":1554,\"totalInferenceCount\":2},\"labelStats\":{\"nLabelsTotal\":0,\"nLabelsCorrect\":0,\"nLabelsIncorrect\":0,\"nLabelsManuallyPlaced\":0,\"locationToVerifiedLabels\":{\"\":[]}},\"timestamp\":1727922675203,\"dataIDX\":-1}",
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727922684376\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":0,\"totalInferenceCount\":0},\"labelStats\":{\"nLabelsTotal\":0,\"nLabelsCorrect\":0,\"nLabelsIncorrect\":0,\"nLabelsManuallyPlaced\":0,\"locationToVerifiedLabels\":{\"\":[]}},\"timestamp\":1727922688024,\"dataIDX\":-1}",
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727977327179\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":0,\"totalInferenceCount\":0},\"labelStats\":{\"nLabelsTotal\":0,\"nLabelsCorrect\":0,\"nLabelsIncorrect\":0,\"nLabelsManuallyPlaced\":0,\"locationToVerifiedLabels\":{\"\":[]}},\"timestamp\":1727977331671,\"dataIDX\":-1,\"stopID\":129}",
+    "{\"missionID\":\"test-mission-id\",\"sessionID\":\"1727977355736\",\"missionStats\":{\"targetLocations\":200,\"completedLocations\":1},\"CVStats\":{\"iouThreshold\":0.7,\"confidenceThreshold\":0.3,\"totalInferenceTime\":0,\"totalInferenceCount\":0},\"labelStats\":{\"nLabelsTotal\":0,\"nLabelsCorrect\":0,\"nLabelsIncorrect\":0,\"nLabelsManuallyPlaced\":0,\"locationToVerifiedLabels\":{\"\":[]}},\"timestamp\":1727977358318,\"dataIDX\":-1,\"stopID\":1}",
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728051029444",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 965,
+            "totalInferenceCount": 2
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 4,
+            "locationToVerifiedLabels": {
+                "": [
+                    {
+                        "id": "seating-0",
+                        "labelType": "seating",
+                        "heading": 306.2766470966424,
+                        "pitch": -5.69206696161784,
+                        "originalX": 793,
+                        "originalY": 587,
+                        "left": 792.9999999999995,
+                        "top": 582,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "9CnGsQTE3wiVNKz55qgeRg"
+                    },
+                    {
+                        "id": "shelter-0",
+                        "labelType": "shelter",
+                        "heading": 306.2766470966424,
+                        "pitch": -5.69206696161784,
+                        "originalX": 763,
+                        "originalY": 309,
+                        "left": 762.9999999999995,
+                        "top": 304.00000000000006,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "9CnGsQTE3wiVNKz55qgeRg"
+                    },
+                    {
+                        "id": "trashcan-0",
+                        "labelType": "trashcan",
+                        "heading": 306.2766470966424,
+                        "pitch": -5.69206696161784,
+                        "originalX": 578,
+                        "originalY": 520,
+                        "left": 578.0000000000002,
+                        "top": 515,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "9CnGsQTE3wiVNKz55qgeRg"
+                    },
+                    {
+                        "id": "signage-0",
+                        "labelType": "signage",
+                        "heading": 306.2766470966424,
+                        "pitch": -5.69206696161784,
+                        "originalX": 407,
+                        "originalY": 243,
+                        "left": 406.9999999999998,
+                        "top": 238.00000000000009,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "9CnGsQTE3wiVNKz55qgeRg"
+                    }
+                ]
+            }
+        },
+        "timestamp": 1728051056415,
+        "dataIDX": -1,
+        "stopID": 4
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728051125471",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 562,
+            "totalInferenceCount": 1
+        },
+        "labelStats": {
+            "nLabelsTotal": 1,
+            "nLabelsCorrect": 1,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": [
+                    {
+                        "id": "signage-0",
+                        "labelType": "signage",
+                        "heading": 166.71299169665514,
+                        "pitch": -9.383478300063942,
+                        "originalX": 292.883113861084,
+                        "originalY": 364.323690032959,
+                        "left": 292.88311386108376,
+                        "top": 359.323690032959,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.81",
+                        "panoID": "CjuTkxgV4xIDLH3H_NF8kg",
+                        "originalBoundingBox": [
+                            279.5278347015381,
+                            337.6370939254761,
+                            26.710558319091795,
+                            53.373192214965826
+                        ],
+                        "originalPitch": -9.383478300063942,
+                        "originalHeading": 166.71299169665514,
+                        "timestamp": 1728051134302
+                    }
+                ]
+            }
+        },
+        "timestamp": 1728051136536,
+        "dataIDX": -1,
+        "stopID": 398
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728051159967",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 966,
+            "totalInferenceCount": 2
+        },
+        "labelStats": {
+            "nLabelsTotal": 4,
+            "nLabelsCorrect": 2,
+            "nLabelsIncorrect": 2,
+            "nLabelsManuallyPlaced": 3,
+            "locationToVerifiedLabels": {
+                "": [
+                    {
+                        "id": "signage-0",
+                        "labelType": "signage",
+                        "heading": 186.7377091049636,
+                        "pitch": -7.962698835398811,
+                        "originalX": 333.72989387512206,
+                        "originalY": 401.0629051208496,
+                        "left": 333.72989387512234,
+                        "top": 396.0629051208496,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.33",
+                        "panoID": "cKhAWzF1svr8Duh3buCLIQ",
+                        "originalBoundingBox": [
+                            325.34460296630857,
+                            389.46250648498534,
+                            16.77058181762695,
+                            23.20079727172852
+                        ],
+                        "originalPitch": -7.962698835398811,
+                        "originalHeading": 186.7377091049636,
+                        "timestamp": 1728051172858
+                    },
+                    {
+                        "id": "seating-0",
+                        "labelType": "seating",
+                        "heading": 186.7377091049636,
+                        "pitch": -7.962698835398811,
+                        "originalX": 647.0198822021483,
+                        "originalY": 505.56867599487305,
+                        "left": 647.0198822021488,
+                        "top": 500.56867599487305,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.88",
+                        "panoID": "cKhAWzF1svr8Duh3buCLIQ",
+                        "originalBoundingBox": [
+                            610.8677799224853,
+                            473.7292001724243,
+                            72.30420455932617,
+                            63.67895164489746
+                        ],
+                        "originalPitch": -7.962698835398811,
+                        "originalHeading": 186.7377091049636,
+                        "timestamp": 1728051175265
+                    },
+                    {
+                        "id": "trashcan-1",
+                        "labelType": "trashcan",
+                        "heading": 186.7377091049636,
+                        "pitch": -7.962698835398811,
+                        "originalX": 751.0458526611328,
+                        "originalY": 507.5564117431641,
+                        "left": 751.0458526611332,
+                        "top": 502.5564117431641,
+                        "verificationState": "VERIFIED_INCORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.42",
+                        "panoID": "cKhAWzF1svr8Duh3buCLIQ",
+                        "originalBoundingBox": [
+                            726.6043659210205,
+                            479.01364803314215,
+                            48.88297348022461,
+                            57.08552742004395
+                        ],
+                        "originalPitch": -7.962698835398811,
+                        "originalHeading": 186.7377091049636,
+                        "timestamp": 1728051178012
+                    },
+                    {
+                        "id": "trashcan-1",
+                        "labelType": "trashcan",
+                        "heading": 186.7377091049636,
+                        "pitch": -7.962698835398811,
+                        "originalX": 751.0458526611328,
+                        "originalY": 507.5564117431641,
+                        "left": 751.0458526611332,
+                        "top": 502.5564117431641,
+                        "verificationState": "VERIFIED_INCORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.42",
+                        "panoID": "cKhAWzF1svr8Duh3buCLIQ",
+                        "originalBoundingBox": [
+                            726.6043659210205,
+                            479.01364803314215,
+                            48.88297348022461,
+                            57.08552742004395
+                        ],
+                        "originalPitch": -7.962698835398811,
+                        "originalHeading": 186.7377091049636,
+                        "timestamp": 1728051179337
+                    },
+                    {
+                        "id": "seating-1",
+                        "labelType": "seating",
+                        "heading": 186.7377091049636,
+                        "pitch": -7.962698835398811,
+                        "originalX": 808,
+                        "originalY": 489,
+                        "left": 808.0000000000002,
+                        "top": 484,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "cKhAWzF1svr8Duh3buCLIQ"
+                    },
+                    {
+                        "id": "trashcan-2",
+                        "labelType": "trashcan",
+                        "heading": 186.7377091049636,
+                        "pitch": -7.962698835398811,
+                        "originalX": 941,
+                        "originalY": 519,
+                        "left": 941.0000000000003,
+                        "top": 514,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "cKhAWzF1svr8Duh3buCLIQ"
+                    },
+                    {
+                        "id": "shelter-0",
+                        "labelType": "shelter",
+                        "heading": 186.7377091049636,
+                        "pitch": -7.962698835398811,
+                        "originalX": 787,
+                        "originalY": 327,
+                        "left": 787,
+                        "top": 322,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "cKhAWzF1svr8Duh3buCLIQ"
+                    }
+                ]
+            }
+        },
+        "timestamp": 1728051209243,
+        "dataIDX": -1,
+        "stopID": 1343
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728051299930",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728051305970,
+        "dataIDX": -1,
+        "stopID": 1402
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728051358646",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 1709,
+            "totalInferenceCount": 3
+        },
+        "labelStats": {
+            "nLabelsTotal": 2,
+            "nLabelsCorrect": 1,
+            "nLabelsIncorrect": 1,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": [
+                    {
+                        "id": "signage-1",
+                        "labelType": "signage",
+                        "heading": 238.01990890245105,
+                        "pitch": -4.357687636721991,
+                        "originalX": 774.3274889469146,
+                        "originalY": 369.72986273765565,
+                        "left": 774.3274889469145,
+                        "top": 364.7298627376557,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.68",
+                        "panoID": "-YtTRagSWz8o8JdCavOUxQ",
+                        "originalBoundingBox": [
+                            752.5958242416382,
+                            344.6080200076103,
+                            43.46332941055298,
+                            50.243685460090646
+                        ],
+                        "originalPitch": -4.357687636721991,
+                        "originalHeading": 238.01990890245105,
+                        "timestamp": 1728051374789
+                    },
+                    {
+                        "id": "signage-2",
+                        "labelType": "signage",
+                        "heading": 238.01990890245105,
+                        "pitch": -4.357687636721991,
+                        "originalX": 67.17434210479259,
+                        "originalY": 325.7389666557312,
+                        "left": 67.1743421047911,
+                        "top": 320.73896665573113,
+                        "verificationState": "VERIFIED_INCORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.47",
+                        "panoID": "-YtTRagSWz8o8JdCavOUxQ",
+                        "originalBoundingBox": [
+                            48.19843055605888,
+                            300.4043156385422,
+                            37.95182309746742,
+                            50.669302034378056
+                        ],
+                        "originalPitch": -4.357687636721991,
+                        "originalHeading": 238.01990890245105,
+                        "timestamp": 1728051381214
+                    }
+                ]
+            }
+        },
+        "timestamp": 1728051383444,
+        "dataIDX": -1,
+        "stopID": 1319
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728051407680",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 8357,
+            "totalInferenceCount": 15
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728051543844,
+        "dataIDX": -1,
+        "stopID": 539
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728051740499",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 5607,
+            "totalInferenceCount": 11
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 5,
+            "locationToVerifiedLabels": {
+                "": [
+                    {
+                        "id": "signage-0",
+                        "labelType": "signage",
+                        "heading": 333.3131801414772,
+                        "pitch": -19.000509023155644,
+                        "originalX": 500,
+                        "originalY": 275,
+                        "left": 500,
+                        "top": 270,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "CAoSLEFGMVFpcE5EdExoY2pEaEJEaldfREgxcGxBenNweEpZZy1IODI5aFJCWjBO"
+                    },
+                    {
+                        "id": "shelter-0",
+                        "labelType": "shelter",
+                        "heading": 333.3131801414772,
+                        "pitch": -19.000509023155644,
+                        "originalX": 980,
+                        "originalY": 243,
+                        "left": 980,
+                        "top": 238,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "CAoSLEFGMVFpcE5EdExoY2pEaEJEaldfREgxcGxBenNweEpZZy1IODI5aFJCWjBO"
+                    },
+                    {
+                        "id": "seating-0",
+                        "labelType": "seating",
+                        "heading": 333.3131801414772,
+                        "pitch": -19.000509023155644,
+                        "originalX": 856,
+                        "originalY": 363,
+                        "left": 856,
+                        "top": 358,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "CAoSLEFGMVFpcE5EdExoY2pEaEJEaldfREgxcGxBenNweEpZZy1IODI5aFJCWjBO"
+                    },
+                    {
+                        "id": "seating-1",
+                        "labelType": "seating",
+                        "heading": 333.3131801414772,
+                        "pitch": -19.000509023155644,
+                        "originalX": 941,
+                        "originalY": 372,
+                        "left": 940.9999999999999,
+                        "top": 367,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "CAoSLEFGMVFpcE5EdExoY2pEaEJEaldfREgxcGxBenNweEpZZy1IODI5aFJCWjBO"
+                    },
+                    {
+                        "id": "trashcan-0",
+                        "labelType": "trashcan",
+                        "heading": 333.3131801414772,
+                        "pitch": -19.000509023155644,
+                        "originalX": 732,
+                        "originalY": 376,
+                        "left": 732,
+                        "top": 371,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "CAoSLEFGMVFpcE5EdExoY2pEaEJEaldfREgxcGxBenNweEpZZy1IODI5aFJCWjBO"
+                    }
+                ]
+            }
+        },
+        "timestamp": 1728051786552,
+        "dataIDX": -1,
+        "stopID": 788
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728051808193",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 537,
+            "totalInferenceCount": 1
+        },
+        "labelStats": {
+            "nLabelsTotal": 4,
+            "nLabelsCorrect": 4,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 1,
+            "locationToVerifiedLabels": {
+                "": [
+                    {
+                        "id": "shelter-0",
+                        "labelType": "shelter",
+                        "heading": 240.49460694238888,
+                        "pitch": -10,
+                        "originalX": 919,
+                        "originalY": 356,
+                        "left": 697.6987908994911,
+                        "top": 282.5159679161185,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "9sB2tZH6KnpOjkNxQt2VVA"
+                    },
+                    {
+                        "id": "trashcan-0",
+                        "labelType": "trashcan",
+                        "heading": 257.3707769451447,
+                        "pitch": -15.134407678240692,
+                        "originalX": 569.5109201192856,
+                        "originalY": 483.85080184936527,
+                        "left": 569.5109201192855,
+                        "top": 478.8508018493653,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.91",
+                        "panoID": "9sB2tZH6KnpOjkNxQt2VVA",
+                        "originalBoundingBox": [
+                            533.8083559036255,
+                            431.49569078683857,
+                            71.4051284313202,
+                            104.7102221250534
+                        ],
+                        "originalPitch": -15.134407678240692,
+                        "originalHeading": 257.3707769451447,
+                        "timestamp": 1728051820210
+                    },
+                    {
+                        "id": "seating-0",
+                        "labelType": "seating",
+                        "heading": 257.3707769451447,
+                        "pitch": -15.134407678240692,
+                        "originalX": 871.9848884582519,
+                        "originalY": 483.9307844161987,
+                        "left": 871.984888458252,
+                        "top": 478.9307844161987,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.44",
+                        "panoID": "9sB2tZH6KnpOjkNxQt2VVA",
+                        "originalBoundingBox": [
+                            783.9785341739654,
+                            440.91751261949537,
+                            176.012708568573,
+                            86.02654359340669
+                        ],
+                        "originalPitch": -15.134407678240692,
+                        "originalHeading": 257.3707769451447,
+                        "timestamp": 1728051821836
+                    },
+                    {
+                        "id": "signage-0",
+                        "labelType": "signage",
+                        "heading": 257.3707769451447,
+                        "pitch": -15.134407678240692,
+                        "originalX": 341.048536324501,
+                        "originalY": 257.48356692790986,
+                        "left": 341.0485363245013,
+                        "top": 252.48356692790992,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.42",
+                        "panoID": "9sB2tZH6KnpOjkNxQt2VVA",
+                        "originalBoundingBox": [
+                            322.8408786058426,
+                            230.64375090003014,
+                            36.41531543731689,
+                            53.679632055759434
+                        ],
+                        "originalPitch": -15.134407678240692,
+                        "originalHeading": 257.3707769451447,
+                        "timestamp": 1728051823610
+                    },
+                    {
+                        "id": "shelter-1",
+                        "labelType": "shelter",
+                        "heading": 257.3707769451447,
+                        "pitch": -15.134407678240692,
+                        "originalX": 813.493415927887,
+                        "originalY": 407.1189797639847,
+                        "left": 813.4934159278869,
+                        "top": 402.11897976398467,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.98",
+                        "panoID": "9sB2tZH6KnpOjkNxQt2VVA",
+                        "originalBoundingBox": [
+                            595.1304571390152,
+                            270.61873164176944,
+                            436.72591757774353,
+                            273.00049624443056
+                        ],
+                        "originalPitch": -15.134407678240692,
+                        "originalHeading": 257.3707769451447,
+                        "timestamp": 1728051826715
+                    }
+                ]
+            }
+        },
+        "timestamp": 1728051830360,
+        "dataIDX": -1,
+        "stopID": 1209
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728052298953",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 1765,
+            "totalInferenceCount": 2
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728052321858,
+        "dataIDX": -1,
+        "stopID": 775
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728052340288",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 2992,
+            "totalInferenceCount": 4
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728052365109,
+        "dataIDX": -1,
+        "stopID": 4
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728052397987",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728052414677,
+        "dataIDX": -1,
+        "stopID": 1
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728052541418",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 18058,
+            "totalInferenceCount": 25
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 5,
+            "locationToVerifiedLabels": {
+                "": [
+                    {
+                        "id": "shelter-0",
+                        "labelType": "shelter",
+                        "heading": 12.355018190839136,
+                        "pitch": -9.457689580619757,
+                        "originalX": 790,
+                        "originalY": 240,
+                        "left": 561.3581734995876,
+                        "top": 194.83799889781636,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "8MLnttaKxUh8jFk-ustuVQ"
+                    },
+                    {
+                        "id": "seating-0",
+                        "labelType": "seating",
+                        "heading": 12.355018190839136,
+                        "pitch": -9.457689580619757,
+                        "originalX": 889,
+                        "originalY": 525,
+                        "left": 666.9286419948423,
+                        "top": 476.59595331626025,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "8MLnttaKxUh8jFk-ustuVQ"
+                    },
+                    {
+                        "id": "signage-0",
+                        "labelType": "signage",
+                        "heading": 12.355018190839136,
+                        "pitch": -9.457689580619757,
+                        "originalX": 744,
+                        "originalY": 53,
+                        "left": 509.14849209130796,
+                        "top": 4.3614433931340955,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "8MLnttaKxUh8jFk-ustuVQ"
+                    },
+                    {
+                        "id": "trashcan-0",
+                        "labelType": "trashcan",
+                        "heading": 12.355018190839136,
+                        "pitch": -9.457689580619757,
+                        "originalX": 515,
+                        "originalY": 512,
+                        "left": 286.8085216096175,
+                        "top": 477.10198068049186,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "8MLnttaKxUh8jFk-ustuVQ"
+                    },
+                    {
+                        "id": "signage-1",
+                        "labelType": "signage",
+                        "heading": 22.01204747615998,
+                        "pitch": -5.994934569616547,
+                        "originalX": 1229,
+                        "originalY": 288,
+                        "left": 1234.379186749687,
+                        "top": 161.04723832035575,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "8MLnttaKxUh8jFk-ustuVQ"
+                    }
+                ]
+            }
+        },
+        "timestamp": 1728052858169,
+        "dataIDX": -1,
+        "stopID": 4
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728052877173",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 1706,
+            "totalInferenceCount": 2
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728053007584,
+        "dataIDX": -1,
+        "stopID": 1
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728508259571",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728508264017,
+        "dataIDX": -1,
+        "stopID": 1
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728508454487",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728508460007,
+        "dataIDX": -1,
+        "stopID": 4
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728508572708",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728508575286,
+        "dataIDX": -1,
+        "stopID": 4
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728508592707",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 549,
+            "totalInferenceCount": 1
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728508739514,
+        "dataIDX": -1,
+        "stopID": 4
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728508751895",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728575403889,
+        "dataIDX": -1,
+        "stopID": 4
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728576737145",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 568,
+            "totalInferenceCount": 1
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728576752105,
+        "dataIDX": -1,
+        "stopID": 1
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728576756988",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 950,
+            "totalInferenceCount": 2
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728576771827,
+        "dataIDX": -1,
+        "stopID": 209
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728576931648",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 1636,
+            "totalInferenceCount": 3
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728576971094,
+        "dataIDX": -1,
+        "stopID": 1
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728577207919",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728577213946,
+        "dataIDX": -1,
+        "stopID": 1
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728577218732",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 1681,
+            "totalInferenceCount": 3
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728577340813,
+        "dataIDX": -1,
+        "stopID": 1454
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728577347904",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728577350394,
+        "dataIDX": -1,
+        "stopID": 1
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728577354723",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 3143,
+            "totalInferenceCount": 6
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 2,
+            "locationToVerifiedLabels": {
+                "": [
+                    {
+                        "id": "seating-0",
+                        "labelType": "seating",
+                        "heading": 213.47066381244386,
+                        "pitch": -8.526993595681546,
+                        "originalX": 847,
+                        "originalY": 578,
+                        "left": 846.9999999999999,
+                        "top": 573,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "W1TPkHG9Bh41uyA4d786ag"
+                    },
+                    {
+                        "id": "signage-0",
+                        "labelType": "signage",
+                        "heading": 213.47066381244386,
+                        "pitch": -8.526993595681546,
+                        "originalX": 440,
+                        "originalY": 348,
+                        "left": 439.99999999999886,
+                        "top": 343,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "W1TPkHG9Bh41uyA4d786ag"
+                    }
+                ]
+            }
+        },
+        "timestamp": 1728577395935,
+        "dataIDX": -1,
+        "stopID": 627
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728577402424",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 1037,
+            "totalInferenceCount": 2
+        },
+        "labelStats": {
+            "nLabelsTotal": 1,
+            "nLabelsCorrect": 1,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": [
+                    {
+                        "id": "signage-0",
+                        "labelType": "signage",
+                        "heading": 308.73906769467186,
+                        "pitch": -6.722106650449803,
+                        "originalX": 656.3568385124206,
+                        "originalY": 382.44315848350533,
+                        "left": 656.3568385124205,
+                        "top": 377.44315848350533,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.86",
+                        "panoID": "7udj1v635XEOEaGETBzKsg",
+                        "originalBoundingBox": [
+                            648.9752900838852,
+                            360.7820948243142,
+                            14.763096857070924,
+                            43.32212731838227
+                        ],
+                        "originalPitch": -6.722106650449803,
+                        "originalHeading": 308.73906769467186,
+                        "timestamp": 1728577414858
+                    }
+                ]
+            }
+        },
+        "timestamp": 1728577416826,
+        "dataIDX": -1,
+        "stopID": 128
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728577426488",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 4244,
+            "totalInferenceCount": 8
+        },
+        "labelStats": {
+            "nLabelsTotal": 2,
+            "nLabelsCorrect": 2,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": [
+                    {
+                        "id": "trashcan-0",
+                        "labelType": "trashcan",
+                        "heading": 139.9338386146992,
+                        "pitch": -5.323558119742486,
+                        "originalX": 690.1812814712525,
+                        "originalY": 544.8130970001221,
+                        "left": 690.1812814712522,
+                        "top": 539.8130970001221,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.91",
+                        "panoID": "j0JaSMf_jlriPaZqjCs-sg",
+                        "originalBoundingBox": [
+                            597.9342092037201,
+                            474.2921938896179,
+                            184.49414453506472,
+                            141.04180622100833
+                        ],
+                        "originalPitch": -5.323558119742486,
+                        "originalHeading": 139.9338386146992,
+                        "timestamp": 1728577451453
+                    },
+                    {
+                        "id": "seating-1",
+                        "labelType": "seating",
+                        "heading": 139.9338386146992,
+                        "pitch": -5.323558119742486,
+                        "originalX": 512.1522343635559,
+                        "originalY": 551.3690991401672,
+                        "left": 512.1522343635563,
+                        "top": 546.3690991401672,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.31",
+                        "panoID": "j0JaSMf_jlriPaZqjCs-sg",
+                        "originalBoundingBox": [
+                            426.9414298415184,
+                            512.3457356214524,
+                            170.421609044075,
+                            78.04672703742982
+                        ],
+                        "originalPitch": -5.323558119742486,
+                        "originalHeading": 139.9338386146992,
+                        "timestamp": 1728577452938
+                    }
+                ]
+            }
+        },
+        "timestamp": 1728577462592,
+        "dataIDX": -1,
+        "stopID": 46
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728577647545",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728577649761,
+        "dataIDX": -1,
+        "stopID": 1
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728577654166",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 566,
+            "totalInferenceCount": 1
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728577663677,
+        "dataIDX": -1,
+        "stopID": 1
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728577669443",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 561,
+            "totalInferenceCount": 1
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728577960668,
+        "dataIDX": -1,
+        "stopID": 963
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728577968361",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728577973166,
+        "dataIDX": -1,
+        "stopID": 1
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728577981797",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 2784,
+            "totalInferenceCount": 5
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728578097042,
+        "dataIDX": -1,
+        "stopID": 1356
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728578104936",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 612,
+            "totalInferenceCount": 1
+        },
+        "labelStats": {
+            "nLabelsTotal": 1,
+            "nLabelsCorrect": 1,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": [
+                    {
+                        "id": "signage-0",
+                        "labelType": "signage",
+                        "heading": 0.5184757638912042,
+                        "pitch": -5.192381420390234,
+                        "originalX": 387.36024584770206,
+                        "originalY": 289.11497762203214,
+                        "left": 387.360245847702,
+                        "top": 284.11497762203214,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.61",
+                        "panoID": "c7H3ws-P4yv9j59CV4xf_w",
+                        "originalBoundingBox": [
+                            380.0233350634575,
+                            236.2321901321411,
+                            14.673821568489075,
+                            105.76557497978212
+                        ],
+                        "originalPitch": -5.192381420390234,
+                        "originalHeading": 0.5184757638912042,
+                        "timestamp": 1728578331935
+                    }
+                ]
+            }
+        },
+        "timestamp": 1728578333253,
+        "dataIDX": -1,
+        "stopID": 496
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728578456691",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 1010,
+            "totalInferenceCount": 2
+        },
+        "labelStats": {
+            "nLabelsTotal": 1,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 1,
+            "nLabelsManuallyPlaced": 2,
+            "locationToVerifiedLabels": {
+                "": [
+                    {
+                        "id": "signage-0",
+                        "labelType": "signage",
+                        "heading": 315.93620441984484,
+                        "pitch": -4.484409188610513,
+                        "originalX": 675.746985244751,
+                        "originalY": 419.6131235599518,
+                        "left": 675.7469852447512,
+                        "top": 414.6131235599519,
+                        "verificationState": "VERIFIED_INCORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.65",
+                        "panoID": "4doyyjTDjBqQw7-8KfRLbA",
+                        "originalBoundingBox": [
+                            662.0382401227952,
+                            386.9383107662201,
+                            27.417490243911743,
+                            65.3496255874634
+                        ],
+                        "originalPitch": -4.484409188610513,
+                        "originalHeading": 315.93620441984484,
+                        "timestamp": 1728578483116
+                    },
+                    {
+                        "id": "signage-1",
+                        "labelType": "signage",
+                        "heading": 315.93620441984484,
+                        "pitch": -4.484409188610513,
+                        "originalX": 674,
+                        "originalY": 282,
+                        "left": 674,
+                        "top": 277,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "4doyyjTDjBqQw7-8KfRLbA"
+                    },
+                    {
+                        "id": "seating-0",
+                        "labelType": "seating",
+                        "heading": 315.93620441984484,
+                        "pitch": -4.484409188610513,
+                        "originalX": 581,
+                        "originalY": 569,
+                        "left": 580.9999999999998,
+                        "top": 564,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "4doyyjTDjBqQw7-8KfRLbA"
+                    }
+                ]
+            }
+        },
+        "timestamp": 1728578503232,
+        "dataIDX": -1,
+        "stopID": 920
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728578556217",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 549,
+            "totalInferenceCount": 1
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728578568297,
+        "dataIDX": -1,
+        "stopID": 920
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728579362720",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 1133,
+            "totalInferenceCount": 2
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728579431536,
+        "dataIDX": -1,
+        "stopID": 209
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728579438357",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 558,
+            "totalInferenceCount": 1
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728579482293,
+        "dataIDX": -1,
+        "stopID": 294
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728579505243",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728579580506,
+        "dataIDX": -1,
+        "stopID": 4
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728579624349",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728579626846,
+        "dataIDX": -1,
+        "stopID": 4
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728579634131",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728579711851,
+        "dataIDX": -1,
+        "stopID": 4
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728579721797",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728579728023,
+        "dataIDX": -1,
+        "stopID": 4
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728579742827",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728579907025,
+        "dataIDX": -1,
+        "stopID": 55
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728579912393",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728579917213,
+        "dataIDX": -1,
+        "stopID": 444
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728579925806",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728579944996,
+        "dataIDX": -1,
+        "stopID": 55
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728579956595",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728579962816,
+        "dataIDX": -1,
+        "stopID": 55
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728582522936",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728582531741,
+        "dataIDX": -1,
+        "stopID": 1
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728582596102",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728582598847,
+        "dataIDX": -1,
+        "stopID": 1
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728582639086",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728582641310,
+        "dataIDX": -1,
+        "stopID": 1
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728582668073",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728582670512,
+        "dataIDX": -1,
+        "stopID": 1
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728582793370",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728582796252,
+        "dataIDX": -1,
+        "stopID": 1
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728587190397",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728587194317,
+        "dataIDX": -1,
+        "stopID": 1
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728587215617",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 5095,
+            "totalInferenceCount": 6
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728587239112,
+        "dataIDX": -1,
+        "stopID": 1428
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728603110659",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728603113624,
+        "dataIDX": -1,
+        "stopID": 1
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728603312110",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728603316254,
+        "dataIDX": -1,
+        "stopID": 1
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728655257642",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 2157,
+            "totalInferenceCount": 4
+        },
+        "labelStats": {
+            "nLabelsTotal": 4,
+            "nLabelsCorrect": 4,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": [
+                    {
+                        "id": "shelter-0",
+                        "labelType": "shelter",
+                        "heading": 12.972861335647325,
+                        "pitch": -2.0513076278094786,
+                        "originalX": 692.1770793914794,
+                        "originalY": 501.73327245712284,
+                        "left": 692.1770793914793,
+                        "top": 496.73327245712284,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.86",
+                        "panoID": "lR07h1gaE-jGREQbCa3tTA",
+                        "originalBoundingBox": [
+                            535.9470585823059,
+                            379.89075050354006,
+                            312.46004161834713,
+                            243.68504390716555
+                        ],
+                        "originalPitch": -2.0513076278094786,
+                        "originalHeading": 12.972861335647325,
+                        "timestamp": 1728655268634
+                    },
+                    {
+                        "id": "seating-0",
+                        "labelType": "seating",
+                        "heading": 12.972861335647325,
+                        "pitch": -2.0513076278094786,
+                        "originalX": 677.1132957458495,
+                        "originalY": 574.3269332885742,
+                        "left": 677.1132957458495,
+                        "top": 569.3269332885742,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.72",
+                        "panoID": "lR07h1gaE-jGREQbCa3tTA",
+                        "originalBoundingBox": [
+                            582.2855804443359,
+                            540.510495185852,
+                            189.65543060302733,
+                            67.63287620544433
+                        ],
+                        "originalPitch": -2.0513076278094786,
+                        "originalHeading": 12.972861335647325,
+                        "timestamp": 1728655270118
+                    },
+                    {
+                        "id": "trashcan-0",
+                        "labelType": "trashcan",
+                        "heading": 12.972861335647325,
+                        "pitch": -2.0513076278094786,
+                        "originalX": 491.80214424133294,
+                        "originalY": 580.9703813552857,
+                        "left": 491.8021442413329,
+                        "top": 575.9703813552856,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.86",
+                        "panoID": "lR07h1gaE-jGREQbCa3tTA",
+                        "originalBoundingBox": [
+                            457.39393959045407,
+                            533.2515260696412,
+                            68.8164093017578,
+                            95.43771057128907
+                        ],
+                        "originalPitch": -2.0513076278094786,
+                        "originalHeading": 12.972861335647325,
+                        "timestamp": 1728655271907
+                    },
+                    {
+                        "id": "signage-0",
+                        "labelType": "signage",
+                        "heading": 339.9488309316765,
+                        "pitch": -4.673972603155519,
+                        "originalX": 847.7787174224852,
+                        "originalY": 331.4840309143067,
+                        "left": 847.7787174224841,
+                        "top": 326.4840309143067,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.39",
+                        "panoID": "TIhLdl7kBQFzZ-Z6zVfc6g",
+                        "originalBoundingBox": [
+                            839.0456671714782,
+                            303.3843453884125,
+                            17.466100502014157,
+                            56.19937105178833
+                        ],
+                        "originalPitch": -4.673972603155519,
+                        "originalHeading": 339.9488309316765,
+                        "timestamp": 1728655282933
+                    }
+                ]
+            }
+        },
+        "timestamp": 1728655287659,
+        "dataIDX": -1,
+        "stopID": 4
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728655313735",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 6588,
+            "totalInferenceCount": 12
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 2,
+            "locationToVerifiedLabels": {
+                "": [
+                    {
+                        "id": "signage-1",
+                        "labelType": "signage",
+                        "heading": 139.3567800552166,
+                        "pitch": -5.161682621385822,
+                        "originalX": 399,
+                        "originalY": 252,
+                        "left": 398.99999999999886,
+                        "top": 247.00000000000003,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "fT33Br9VvGtsehiZSkokHQ"
+                    },
+                    {
+                        "id": "seating-0",
+                        "labelType": "seating",
+                        "heading": 139.3567800552166,
+                        "pitch": -5.161682621385822,
+                        "originalX": 460,
+                        "originalY": 626,
+                        "left": 459.99999999999864,
+                        "top": 621,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "fT33Br9VvGtsehiZSkokHQ"
+                    }
+                ]
+            }
+        },
+        "timestamp": 1728655352061,
+        "dataIDX": -1,
+        "stopID": 297
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728655366820",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 548,
+            "totalInferenceCount": 1
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 1,
+            "locationToVerifiedLabels": {
+                "": [
+                    {
+                        "id": "signage-0",
+                        "labelType": "signage",
+                        "heading": 19.050753884624516,
+                        "pitch": -1.6220768797999483,
+                        "originalX": 931,
+                        "originalY": 430,
+                        "left": 930.9999999999999,
+                        "top": 425,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "qrShfLigGUcXKj6suKregQ"
+                    }
+                ]
+            }
+        },
+        "timestamp": 1728655380662,
+        "dataIDX": -1,
+        "stopID": 1320
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728655388640",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 5206,
+            "totalInferenceCount": 9
+        },
+        "labelStats": {
+            "nLabelsTotal": 2,
+            "nLabelsCorrect": 2,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 1,
+            "locationToVerifiedLabels": {
+                "": [
+                    {
+                        "id": "seating-0",
+                        "labelType": "seating",
+                        "heading": 273.3103984524885,
+                        "pitch": -1.6135126378364646,
+                        "originalX": 687.8690614700317,
+                        "originalY": 557.9577355384828,
+                        "left": 687.869061470031,
+                        "top": 552.9577355384828,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.33",
+                        "panoID": "-KtL2CRViE_ow8IVBhxiTQ",
+                        "originalBoundingBox": [
+                            653.9407539367676,
+                            535.5529271364213,
+                            67.85661506652832,
+                            44.809616804122925
+                        ],
+                        "originalPitch": -1.6135126378364646,
+                        "originalHeading": 273.3103984524885,
+                        "timestamp": 1728655426689
+                    },
+                    {
+                        "id": "trashcan-0",
+                        "labelType": "trashcan",
+                        "heading": 273.3103984524885,
+                        "pitch": -1.6135126378364646,
+                        "originalX": 729.7810621261597,
+                        "originalY": 526.5560331344604,
+                        "left": 729.7810621261607,
+                        "top": 521.5560331344604,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.40",
+                        "panoID": "-KtL2CRViE_ow8IVBhxiTQ",
+                        "originalBoundingBox": [
+                            709.1363289356232,
+                            489.07715356349945,
+                            41.289466381073,
+                            74.957759141922
+                        ],
+                        "originalPitch": -1.6135126378364646,
+                        "originalHeading": 273.3103984524885,
+                        "timestamp": 1728655428204
+                    },
+                    {
+                        "id": "signage-0",
+                        "labelType": "signage",
+                        "heading": 273.3103984524885,
+                        "pitch": -1.6135126378364646,
+                        "originalX": 776,
+                        "originalY": 336,
+                        "left": 776,
+                        "top": 331,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "-KtL2CRViE_ow8IVBhxiTQ"
+                    }
+                ]
+            }
+        },
+        "timestamp": 1728655433370,
+        "dataIDX": -1,
+        "stopID": 1196
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728655443594",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 3534,
+            "totalInferenceCount": 6
+        },
+        "labelStats": {
+            "nLabelsTotal": 1,
+            "nLabelsCorrect": 1,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": [
+                    {
+                        "id": "signage-1",
+                        "labelType": "signage",
+                        "heading": 96.6187218873597,
+                        "pitch": -15.953089350934619,
+                        "originalX": 441.96654438972473,
+                        "originalY": 225.52828037738803,
+                        "left": 441.9665443897248,
+                        "top": 220.52828037738809,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.52",
+                        "panoID": "IEQFyVVvMHvS2VJEVOuuEg",
+                        "originalBoundingBox": [
+                            433.82890462875366,
+                            204.17623043060306,
+                            16.27527952194214,
+                            42.704099893569946
+                        ],
+                        "originalPitch": -15.953089350934619,
+                        "originalHeading": 96.6187218873597,
+                        "timestamp": 1728655460819
+                    }
+                ]
+            }
+        },
+        "timestamp": 1728655462610,
+        "dataIDX": -1,
+        "stopID": 1515
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728656499469",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 5123,
+            "totalInferenceCount": 9
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 2,
+            "locationToVerifiedLabels": {
+                "": [
+                    {
+                        "id": "seating-0",
+                        "labelType": "seating",
+                        "heading": 174.03607888858042,
+                        "pitch": -4.090773269952692,
+                        "originalX": 446,
+                        "originalY": 460,
+                        "left": 446.00000000000176,
+                        "top": 455,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "-wCtCLNEGMnu4c_dFxa87g"
+                    },
+                    {
+                        "id": "signage-0",
+                        "labelType": "signage",
+                        "heading": 174.03607888858042,
+                        "pitch": -4.090773269952692,
+                        "originalX": 828,
+                        "originalY": 271,
+                        "left": 827.9999999999994,
+                        "top": 266,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "-wCtCLNEGMnu4c_dFxa87g"
+                    }
+                ]
+            }
+        },
+        "timestamp": 1728656529497,
+        "dataIDX": -1,
+        "stopID": 1428
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728656573844",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 3,
+            "locationToVerifiedLabels": {
+                "": [
+                    {
+                        "id": "shelter-0",
+                        "labelType": "shelter",
+                        "heading": 164.19,
+                        "pitch": -10,
+                        "originalX": 663,
+                        "originalY": 224,
+                        "left": 663.0000000000002,
+                        "top": 219,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "55T0wHELhNpZoY0-jzeNGQ"
+                    },
+                    {
+                        "id": "seating-0",
+                        "labelType": "seating",
+                        "heading": 164.19,
+                        "pitch": -10,
+                        "originalX": 694,
+                        "originalY": 547,
+                        "left": 693.9999999999997,
+                        "top": 542,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "55T0wHELhNpZoY0-jzeNGQ"
+                    },
+                    {
+                        "id": "signage-0",
+                        "labelType": "signage",
+                        "heading": 164.19,
+                        "pitch": -10,
+                        "originalX": 384,
+                        "originalY": 319,
+                        "left": 383.9999999999998,
+                        "top": 314,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "55T0wHELhNpZoY0-jzeNGQ"
+                    }
+                ]
+            }
+        },
+        "timestamp": 1728656585535,
+        "dataIDX": -1,
+        "stopID": 55
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728656651882",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 2781,
+            "totalInferenceCount": 5
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 1,
+            "locationToVerifiedLabels": {
+                "": [
+                    {
+                        "id": "signage-1",
+                        "labelType": "signage",
+                        "heading": 301.3581382839394,
+                        "pitch": -10.151255097769393,
+                        "originalX": 259,
+                        "originalY": 316,
+                        "left": 258.99999999999983,
+                        "top": 311,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "A0y_93bCKmD8AHOjEzs1Hg"
+                    }
+                ]
+            }
+        },
+        "timestamp": 1728656664736,
+        "dataIDX": -1,
+        "stopID": 433
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728656772417",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 1037,
+            "totalInferenceCount": 2
+        },
+        "labelStats": {
+            "nLabelsTotal": 1,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 1,
+            "nLabelsManuallyPlaced": 2,
+            "locationToVerifiedLabels": {
+                "": [
+                    {
+                        "id": "signage-0",
+                        "labelType": "signage",
+                        "heading": 315.31365216952275,
+                        "pitch": -5.330416507855674,
+                        "originalX": 726.5228843688965,
+                        "originalY": 382.94384765625,
+                        "left": 726.5228843688969,
+                        "top": 377.94384765625,
+                        "verificationState": "VERIFIED_INCORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.85",
+                        "panoID": "4doyyjTDjBqQw7-8KfRLbA",
+                        "originalBoundingBox": [
+                            712.947642326355,
+                            347.45912170410156,
+                            27.150484085083008,
+                            70.96945190429688
+                        ],
+                        "originalPitch": -5.330416507855674,
+                        "originalHeading": 315.31365216952275,
+                        "timestamp": 1728656783423
+                    },
+                    {
+                        "id": "signage-1",
+                        "labelType": "signage",
+                        "heading": 315.31365216952275,
+                        "pitch": -5.330416507855674,
+                        "originalX": 728,
+                        "originalY": 259,
+                        "left": 727.9999999999995,
+                        "top": 254.00000000000006,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "4doyyjTDjBqQw7-8KfRLbA"
+                    },
+                    {
+                        "id": "seating-0",
+                        "labelType": "seating",
+                        "heading": 315.31365216952275,
+                        "pitch": -5.330416507855674,
+                        "originalX": 612,
+                        "originalY": 536,
+                        "left": 612.0000000000002,
+                        "top": 531,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "4doyyjTDjBqQw7-8KfRLbA"
+                    }
+                ]
+            }
+        },
+        "timestamp": 1728656787512,
+        "dataIDX": -1,
+        "stopID": 920
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728656854366",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 4212,
+            "totalInferenceCount": 8
+        },
+        "labelStats": {
+            "nLabelsTotal": 1,
+            "nLabelsCorrect": 1,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": [
+                    {
+                        "id": "signage-0",
+                        "labelType": "signage",
+                        "heading": 83.21179379213662,
+                        "pitch": -15.389705203303308,
+                        "originalX": 510.44918060302734,
+                        "originalY": 281.97247314453125,
+                        "left": 510.4491806030274,
+                        "top": 276.97247314453125,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.50",
+                        "panoID": "IEQFyVVvMHvS2VJEVOuuEg",
+                        "originalBoundingBox": [
+                            506.0710029602051,
+                            265.79645013809204,
+                            8.756355285644531,
+                            32.35204601287842
+                        ],
+                        "originalPitch": -15.389705203303308,
+                        "originalHeading": 83.21179379213662,
+                        "timestamp": 1728656871486
+                    }
+                ]
+            }
+        },
+        "timestamp": 1728656872627,
+        "dataIDX": -1,
+        "stopID": 1515
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728657379193",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 1503,
+            "totalInferenceCount": 2
+        },
+        "labelStats": {
+            "nLabelsTotal": 1,
+            "nLabelsCorrect": 1,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 2,
+            "locationToVerifiedLabels": {
+                "": [
+                    {
+                        "id": "shelter-0",
+                        "labelType": "shelter",
+                        "heading": 162.06453158450975,
+                        "pitch": -10.78672663732425,
+                        "originalX": 772,
+                        "originalY": 228,
+                        "left": 689.8178739207912,
+                        "top": 213.311311181319,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "55T0wHELhNpZoY0-jzeNGQ"
+                    },
+                    {
+                        "id": "seating-0",
+                        "labelType": "seating",
+                        "heading": 162.06453158450975,
+                        "pitch": -10.78672663732425,
+                        "originalX": 862,
+                        "originalY": 527,
+                        "left": 784.5972864235999,
+                        "top": 510.24886307305104,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "55T0wHELhNpZoY0-jzeNGQ"
+                    },
+                    {
+                        "id": "signage-0",
+                        "labelType": "signage",
+                        "heading": 162.06453158450975,
+                        "pitch": -10.78672663732425,
+                        "originalX": 512.260982131958,
+                        "originalY": 313.32164649963386,
+                        "left": 512.2609821319588,
+                        "top": 308.32164649963386,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.50",
+                        "panoID": "55T0wHELhNpZoY0-jzeNGQ",
+                        "originalBoundingBox": [
+                            495.1670314788818,
+                            280.17107000350956,
+                            34.18790130615234,
+                            66.30115299224855
+                        ],
+                        "originalPitch": -10.78672663732425,
+                        "originalHeading": 162.06453158450975,
+                        "timestamp": 1728657429858
+                    }
+                ]
+            }
+        },
+        "timestamp": 1728657434176,
+        "dataIDX": -1,
+        "stopID": 55
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728657484226",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 702,
+            "totalInferenceCount": 1
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728657493340,
+        "dataIDX": -1,
+        "stopID": 115
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1728657834827",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 740,
+            "totalInferenceCount": 1
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1728657846664,
+        "dataIDX": -1,
+        "stopID": 1
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1729113102865",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 625,
+            "totalInferenceCount": 1
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1729113114336,
+        "dataIDX": -1,
+        "stopID": 1
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1729114057493",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1729114063726,
+        "dataIDX": -1,
+        "stopID": 4
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1729114113640",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 1260,
+            "totalInferenceCount": 2
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1729114120887,
+        "dataIDX": -1,
+        "stopID": 280
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1729114142433",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 6560,
+            "totalInferenceCount": 12
+        },
+        "labelStats": {
+            "nLabelsTotal": 3,
+            "nLabelsCorrect": 3,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 1,
+            "locationToVerifiedLabels": {
+                "": [
+                    {
+                        "id": "trashcan-4",
+                        "labelType": "trashcan",
+                        "heading": 16.250152798542054,
+                        "pitch": -8.252085815042278,
+                        "originalX": 677.6998100280762,
+                        "originalY": 528.8112888336183,
+                        "left": 677.6998100280762,
+                        "top": 523.8112888336183,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.88",
+                        "panoID": "8MLnttaKxUh8jFk-ustuVQ",
+                        "originalBoundingBox": [
+                            641.519702911377,
+                            475.32831573486334,
+                            72.36021423339844,
+                            106.96594619750978
+                        ],
+                        "originalPitch": -8.252085815042278,
+                        "originalHeading": 16.250152798542054,
+                        "timestamp": 1729114193761
+                    },
+                    {
+                        "id": "shelter-2",
+                        "labelType": "shelter",
+                        "heading": 16.250152798542054,
+                        "pitch": -8.252085815042278,
+                        "originalX": 902.8535614013672,
+                        "originalY": 434.63164329528814,
+                        "left": 902.8535614013672,
+                        "top": 429.63164329528814,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.95",
+                        "panoID": "8MLnttaKxUh8jFk-ustuVQ",
+                        "originalBoundingBox": [
+                            733.3071441650391,
+                            303.49925279617315,
+                            339.09283447265625,
+                            262.26478099823
+                        ],
+                        "originalPitch": -8.252085815042278,
+                        "originalHeading": 16.250152798542054,
+                        "timestamp": 1729114195258
+                    },
+                    {
+                        "id": "seating-2",
+                        "labelType": "seating",
+                        "heading": 16.250152798542054,
+                        "pitch": -8.252085815042278,
+                        "originalX": 852.0874328613281,
+                        "originalY": 528.1647720336915,
+                        "left": 852.0874328613281,
+                        "top": 523.1647720336915,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.36",
+                        "panoID": "8MLnttaKxUh8jFk-ustuVQ",
+                        "originalBoundingBox": [
+                            776.6321811676025,
+                            497.6540536880494,
+                            150.91050338745117,
+                            61.02143669128419
+                        ],
+                        "originalPitch": -8.252085815042278,
+                        "originalHeading": 16.250152798542054,
+                        "timestamp": 1729114196594
+                    },
+                    {
+                        "id": "signage-0",
+                        "labelType": "signage",
+                        "heading": 16.250152798542054,
+                        "pitch": -8.252085815042278,
+                        "originalX": 1312,
+                        "originalY": 319,
+                        "left": 1312,
+                        "top": 314,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "8MLnttaKxUh8jFk-ustuVQ"
+                    }
+                ]
+            }
+        },
+        "timestamp": 1729114228128,
+        "dataIDX": -1,
+        "stopID": 4
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1729448013951",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 605,
+            "totalInferenceCount": 1
+        },
+        "labelStats": {
+            "nLabelsTotal": 2,
+            "nLabelsCorrect": 2,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 2,
+            "locationToVerifiedLabels": {
+                "": [
+                    {
+                        "id": "shelter-0",
+                        "labelType": "shelter",
+                        "heading": 12.642018802043648,
+                        "pitch": -5.2788961028978605,
+                        "originalX": 871.3123245239259,
+                        "originalY": 416.16245040893557,
+                        "left": 871.3123245239258,
+                        "top": 411.16245040893557,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.47",
+                        "panoID": "lR07h1gaE-jGREQbCa3tTA",
+                        "originalBoundingBox": [
+                            684.0892436981202,
+                            267.4682432174683,
+                            374.44616165161136,
+                            297.38841438293457
+                        ],
+                        "originalPitch": -5.2788961028978605,
+                        "originalHeading": 12.642018802043648,
+                        "timestamp": 1729448024979
+                    },
+                    {
+                        "id": "trashcan-0",
+                        "labelType": "trashcan",
+                        "heading": 12.642018802043648,
+                        "pitch": -5.2788961028978605,
+                        "originalX": 618.3441139221193,
+                        "originalY": 517.9397418975831,
+                        "left": 618.3441139221193,
+                        "top": 512.9397418975831,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.85",
+                        "panoID": "lR07h1gaE-jGREQbCa3tTA",
+                        "originalBoundingBox": [
+                            578.5706857681275,
+                            459.790775680542,
+                            79.5468563079834,
+                            116.29793243408204
+                        ],
+                        "originalPitch": -5.2788961028978605,
+                        "originalHeading": 12.642018802043648,
+                        "timestamp": 1729448026598
+                    },
+                    {
+                        "id": "signage-0",
+                        "labelType": "signage",
+                        "heading": 12.642018802043648,
+                        "pitch": -5.2788961028978605,
+                        "originalX": 1322,
+                        "originalY": 275,
+                        "left": 1321.9999999999998,
+                        "top": 270,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "lR07h1gaE-jGREQbCa3tTA"
+                    },
+                    {
+                        "id": "seating-0",
+                        "labelType": "seating",
+                        "heading": 12.642018802043648,
+                        "pitch": -5.2788961028978605,
+                        "originalX": 850,
+                        "originalY": 498,
+                        "left": 850,
+                        "top": 493,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": true,
+                        "confidence": 1,
+                        "panoID": "lR07h1gaE-jGREQbCa3tTA"
+                    }
+                ]
+            }
+        },
+        "timestamp": 1729448039100,
+        "dataIDX": -1,
+        "stopID": 4
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1729449035043",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 1207,
+            "totalInferenceCount": 2
+        },
+        "labelStats": {
+            "nLabelsTotal": 2,
+            "nLabelsCorrect": 1,
+            "nLabelsIncorrect": 1,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": [
+                    {
+                        "id": "signage-1",
+                        "labelType": "signage",
+                        "heading": 8.517208104942517,
+                        "pitch": -5.868672765516266,
+                        "originalX": 740.9465843200685,
+                        "originalY": 313.1274810791015,
+                        "left": 740.9465843200685,
+                        "top": 308.12748107910147,
+                        "verificationState": "VERIFIED_CORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.41",
+                        "panoID": "CkUAlKHRODdXMgQPHjbvIw",
+                        "originalBoundingBox": [
+                            718.4850372314454,
+                            264.6963344573974,
+                            44.9230941772461,
+                            96.8622932434082
+                        ],
+                        "originalPitch": -5.868672765516266,
+                        "originalHeading": 8.517208104942517,
+                        "timestamp": 1729449050651
+                    },
+                    {
+                        "id": "signage-1",
+                        "labelType": "signage",
+                        "heading": 8.517208104942517,
+                        "pitch": -5.868672765516266,
+                        "originalX": 740.9465843200685,
+                        "originalY": 313.1274810791015,
+                        "left": 740.9465843200685,
+                        "top": 308.12748107910147,
+                        "verificationState": "VERIFIED_INCORRECT",
+                        "isHumanPlaced": false,
+                        "confidence": "0.41",
+                        "panoID": "CkUAlKHRODdXMgQPHjbvIw",
+                        "originalBoundingBox": [
+                            718.4850372314454,
+                            264.6963344573974,
+                            44.9230941772461,
+                            96.8622932434082
+                        ],
+                        "originalPitch": -5.868672765516266,
+                        "originalHeading": 8.517208104942517,
+                        "timestamp": 1729449052632
+                    }
+                ]
+            }
+        },
+        "timestamp": 1729449054948,
+        "dataIDX": -1,
+        "stopID": 109
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1729538743181",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1729538748379,
+        "dataIDX": -1,
+        "stopID": 1
+    },
+    {
+        "missionID": "test-mission-id",
+        "sessionID": "1729539741362",
+        "missionStats": {
+            "targetLocations": 200,
+            "completedLocations": 1
+        },
+        "CVStats": {
+            "iouThreshold": 0.7,
+            "confidenceThreshold": 0.3,
+            "totalInferenceTime": 0,
+            "totalInferenceCount": 0
+        },
+        "labelStats": {
+            "nLabelsTotal": 0,
+            "nLabelsCorrect": 0,
+            "nLabelsIncorrect": 0,
+            "nLabelsManuallyPlaced": 0,
+            "locationToVerifiedLabels": {
+                "": []
+            }
+        },
+        "timestamp": 1729539744181,
+        "dataIDX": -1,
+        "stopID": 1428
+    }
+]

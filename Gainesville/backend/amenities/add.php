@@ -13,7 +13,7 @@
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
                 if ($benches != $row['benches'] || $trashcans != $row['trashcans'] || $shelters != $row['shelters'] || strtolower($type) != strtolower($row['shelter_type']) || $bikeracks != $row['bikeracks']) {
-                    $sql1 = "INSERT ignore into `inventory_user_feedback` (stop_id, benches, trashcans, shelters, shelter_type, bikeracks) VALUES ('$id', '$benches', '$trashcans', '$shelters', '$type', '$bikeracks')";
+                    $sql1 = "INSERT ignore into `amenity_census` (stop_id, benches, trashcans, shelters, shelter_type, bikeracks) VALUES ('$id', '$benches', '$trashcans', '$shelters', '$type', '$bikeracks')";
                     $result1 = $conn->query($sql1);
                 }
             }

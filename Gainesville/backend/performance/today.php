@@ -10,7 +10,7 @@
     $end = date_format($enddate,"Ymd H:i");
    
     $sql = "SELECT `rt`, SUM(CASE WHEN ontime.data.dly in ('True', 1) THEN 1 ELSE 0 END) AS delays, COUNT(*) AS total, ROUND(SUM(CASE WHEN ontime.data.dly in ('True', 1) THEN 1 ELSE 0 END) / COUNT(*) * 100, 3) AS ratio FROM `data` WHERE `tmstmp` >= '$start' AND `tmstmp` <= '$end' GROUP BY `rt` ORDER BY `ratio` DESC LIMIT 5;";
-    if ($route > 0) {
+    if ($route != "null") {
         $sql = "SELECT `vid`, SUM(CASE WHEN ontime.data.dly in ('True', 1) THEN 1 ELSE 0 END) AS delays, COUNT(*) AS total, ROUND(SUM(CASE WHEN ontime.data.dly in ('True', 1) THEN 1 ELSE 0 END) / COUNT(*) * 100, 3) AS ratio FROM `data` WHERE `tmstmp` >= '$start' AND `tmstmp` <= '$end' AND `rt` = $route GROUP BY `vid` ORDER BY `ratio` DESC LIMIT 5;";
         $sql1 = "SELECT `rt`, SUM(CASE WHEN ontime.data.dly in ('True', 1) THEN 1 ELSE 0 END) AS delays, COUNT(*) AS total, ROUND(SUM(CASE WHEN ontime.data.dly in ('True', 1) THEN 1 ELSE 0 END) / COUNT(*) * 100, 3) AS ratio FROM `data` WHERE `tmstmp` >= '$start' AND `tmstmp` <= '$end' AND `rt` = $route GROUP BY `rt` ORDER BY `ratio` DESC LIMIT 5;";
         $result = $conn->query($sql);
@@ -55,7 +55,7 @@
             }
         }
         else {
-            echo "N/A";
+            echo $route;
         }
         
     }
@@ -80,6 +80,6 @@
             }
         }
         else {
-            echo "N/A";
+            echo "Nothin";
         }
     }

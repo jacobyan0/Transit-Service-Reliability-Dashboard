@@ -80,8 +80,6 @@
                     <input type='date' name='date' max='<?php echo date('Y-m-d');?>' id="year" class="rounded-lg px-2 w-full"></input>
                     <div class="mt-2">Location:</div>
                     <input type='text' name='location' id='location' placeholder="Use the search feature or click on the map" class="bg-white/40 rounded-lg px-2 w-full"></input>
-                    <div class="mt-2">Description:</div>
-                    <textarea id="message" required name="description" rows="4" class="block p-2.5 w-full rounded-lg text-sm border border-dotted border-slate-300/70 hover:border-solid focus:border-slate-300/80" placeholder="Describe what occurred, outside involvement, extra information, etc"></textarea>
                 </div>
                 <div id="incident" class="hidden font-semibold text-base-content">
                     <div class="mt-2">Severity:</div>

@@ -35,6 +35,7 @@ L.maplibreGL({
 
 //check the currrent page to display the correct legend on the map and call the correct functions per page
 var currentPage = new URLSearchParams(window.location.search).get('page');
+
 if (currentPage == "realtime") {
   var legend = L.control({position: 'topright'});
   legend.onAdd = function (map) {
@@ -53,6 +54,17 @@ if (currentPage == "crowdsourcing" || currentPage == "system_data") {
         '<div><img src="images/blue-yellow.png" alt="Icon" class="float-left mr-2" style="width: 50px; height: 50px;">' +
         '<div class="mt-2">Bus Stop</div></div><div>' +
         '<img src="images/red.png" alt="Icon" class="mt-2 float-left mr-2" style="width: 50px; height: 50px;"><div class="mt-4">Bus Stop that may be missing some data</div></div>';
+      return div;
+  };
+  legend.addTo(map);
+}
+
+if (currentPage == "busstopcv") {
+  getInventory();
+    var legend = L.control({position: 'topright'});
+  legend.onAdd = function (map) {
+    var div = L.DomUtil.create('div');
+      div.innerHTML += '<div class="p-3 -mt-3 mb-2 flex -ml-2" onclick="showCVInfo()"><i class="fa fa-question-circle" style="font-size:36px;color:#F87272"></i></div>';
       return div;
   };
   legend.addTo(map);

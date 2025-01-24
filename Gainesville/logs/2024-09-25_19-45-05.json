@@ -1,0 +1,95 @@
+{
+    "missionID": "test-mission-id",
+    "sessionID": "1727293436024",
+    "missionStats": {
+        "targetLocations": 200,
+        "completedLocations": 0
+    },
+    "CVStats": {
+        "iouThreshold": 0.7,
+        "confidenceThreshold": 0.3,
+        "totalInferenceTime": 6267,
+        "totalInferenceCount": 11
+    },
+    "labelStats": {
+        "nLabelsTotal": 3,
+        "nLabelsCorrect": 1,
+        "nLabelsIncorrect": 2,
+        "nLabelsManuallyPlaced": 3,
+        "locationToVerifiedLabels": {
+            "": [
+                {
+                    "id": "signage-1",
+                    "labelType": "signage",
+                    "heading": 60.745306839083696,
+                    "pitch": 1.713806861615609,
+                    "originalX": 642.1411138057708,
+                    "originalY": 469.7028208732606,
+                    "left": 642.1411138057707,
+                    "top": 464.7028208732606,
+                    "verificationState": "VERIFIED_CORRECT",
+                    "isHumanPlaced": false,
+                    "confidence": "0.32",
+                    "panoID": "0Rwb4fEipxOf0ht3OCxLNw",
+                    "originalBoundingBox": [
+                        636.2769594192505,
+                        458.11148377656946,
+                        11.728308773040773,
+                        23.182674193382265
+                    ],
+                    "originalPitch": 1.713806861615609,
+                    "originalHeading": 60.745306839083696,
+                    "timestamp": 1727293459999
+                },
+                {
+                    "id": "shelter-0",
+                    "labelType": "shelter",
+                    "heading": 74.689469681948,
+                    "pitch": -6.642791165927633,
+                    "originalX": 307.81696424484255,
+                    "originalY": 399.37530467510226,
+                    "left": 307.81696424484255,
+                    "top": 394.37530467510226,
+                    "verificationState": "VERIFIED_INCORRECT",
+                    "isHumanPlaced": false,
+                    "confidence": "0.61",
+                    "panoID": "0Rwb4fEipxOf0ht3OCxLNw",
+                    "originalBoundingBox": [
+                        279.4935856699944,
+                        362.97279834747314,
+                        56.646757149696356,
+                        72.8050126552582
+                    ],
+                    "originalPitch": -6.642791165927633,
+                    "originalHeading": 74.689469681948,
+                    "timestamp": 1727293466891
+                },
+                {
+                    "id": "signage-2",
+                    "labelType": "signage",
+                    "heading": 74.689469681948,
+                    "pitch": -6.642791165927633,
+                    "originalX": 1143.1037784576415,
+                    "originalY": 402.75498752593995,
+                    "left": 1143.1037784576415,
+                    "top": 397.75498752593995,
+                    "verificationState": "VERIFIED_INCORRECT",
+                    "isHumanPlaced": false,
+                    "confidence": "0.59",
+                    "panoID": "0Rwb4fEipxOf0ht3OCxLNw",
+                    "originalBoundingBox": [
+                        1136.8840094089508,
+                        387.35674401521686,
+                        12.439538097381593,
+                        30.796487021446232
+                    ],
+                    "originalPitch": -6.642791165927633,
+                    "originalHeading": 74.689469681948,
+                    "timestamp": 1727293468883
+                }
+            ]
+        }
+    },
+    "timestamp": 1727293505422,
+    "dataIDX": -1
+}

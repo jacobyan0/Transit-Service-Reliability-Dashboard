@@ -2,7 +2,7 @@
 // Database configuration
 $servername = "localhost";
 $username = "root";
-$password = "Garfield$1969";
+$password = "mysql";
 //password="Garfield$1969",
 $dbname = "ontime";
 

@@ -1,0 +1,25 @@
+{
+    "missionID": "test-mission-id",
+    "sessionID": "1727293374556",
+    "missionStats": {
+        "targetLocations": 200,
+        "completedLocations": 0
+    },
+    "CVStats": {
+        "iouThreshold": 0.7,
+        "confidenceThreshold": 0.3,
+        "totalInferenceTime": 0,
+        "totalInferenceCount": 0
+    },
+    "labelStats": {
+        "nLabelsTotal": 0,
+        "nLabelsCorrect": 0,
+        "nLabelsIncorrect": 0,
+        "nLabelsManuallyPlaced": 4,
+        "locationToVerifiedLabels": {
+            "": []
+        }
+    },
+    "timestamp": 1727293401569,
+    "dataIDX": -1
+}

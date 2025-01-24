@@ -73,10 +73,12 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 <body class="relative h-screen w-screen bg-slate-100/40 pb-0" onload="realtimeLoading(<?php if ($page === 'realtime') echo 'true'; else echo 'false'?>)">
 <div class="flex flex-row justify-between mb-1">
     <div class="ml-2 mr-2">
+    <a href="index.php?page=realtime">
       <div class="flex flex-row">
         <h1 class="text-5xl text-green-700/80 font-bold">Gator</h1>
         <h1 class="text-5xl text-slate-900/70 font-bold">Ride</h1>
       </div>
+      </a>
       <p class="float-right -mt-2 text-slate-900/70 font-bold text-xs">By Ksenia Velichko</p>
     </div>
     <img class="h-10 mt-3 mr-4" src="images/j&g.jpeg" alt="Just&Green Transportation Lab Logo" />
@@ -88,9 +90,10 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
       
       <details class="dropdown">
         <summary id="amenityLink" class="truncatetext underline-offset-4 decoration-2 text-base cursor-pointer rounded-md px-2 <?php if ($page === 'crowdsourcing' || $page === 'system_data') echo 'text-green-700/80 underline'; else echo 'hover:underline'?>">Bus Stop Amenities</summary>
-        <ul class="menu dropdown-content bg-base-100 mt-2 rounded-box z-[1] w-52 p-2 shadow">
+        <ul class="menu dropdown-content bg-base-100 mt-2 text-[13px] rounded-box z-[1] w-52 p-2 shadow">
           <li class="mb-1 <?php if ($page === 'system_data') echo 'bg-green-600/30 rounded-lg text-green-900/80';?>"><a id="data" href="index.php?page=system_data"><h1>View System Data</h1></a></li>
-          <li class="<?php if ($page === 'crowdsourcing') echo 'bg-green-600/30 rounded-lg text-green-900/80';?>"><a id="report" href="index.php?page=crowdsourcing"><h1>Crowdsourcing Tool</h1></a></li>
+          <li class="mb-1 <?php if ($page === 'crowdsourcing') echo 'bg-green-600/30 rounded-lg text-green-900/80';?>"><a id="report" href="index.php?page=crowdsourcing"><h1>Crowdsourcing Tool</h1></a></li>
+          <li class="<?php if ($page === 'busstopcv') echo 'bg-green-600/30 rounded-lg text-green-900/80';?>"><a id="busstopcv" href="index.php?page=busstopcv"><h1>Bus Stop Census AI Tool</h1></a></li>
         </ul>
       </details>
       
@@ -101,6 +104,12 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
   </div>
   <div id="aboutPage" class="hidden flex justify-center">
     <?php include 'pages/about.php'?>
+  </div>
+  <div id="aboutcvPage" class="hidden flex justify-center">
+    <?php include 'pages/aboutcv.php'?>
+  </div>
+  <div id="confirmPage" class="hidden flex justify-center">
+    <?php include 'pages/confirm.php'?>
   </div>
 
 

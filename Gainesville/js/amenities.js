@@ -22,6 +22,29 @@ var haveShelter = 0;
 var haveNone = 0;
 var haveBikeracks = 0;
 
+
+
+function showCVInfo() {
+  document.getElementById("aboutcvPage").style.display = "flex";
+}
+
+function hideCVInfo() {
+  document.getElementById("aboutcvPage").style.display = "none";
+}
+
+function viewCV(id) {
+  localStorage.setItem('confirmPage', 'true');
+}
+
+function showConfirmPage() {
+  document.getElementById("confirmPage").style.display = "flex";
+}
+
+function hideConfirmPage(success) {
+  localStorage.setItem('confirmPage', 'false');
+  document.getElementById("confirmPage").style.display = "none";
+}
+
 //read inventory data
 function getInventory() {
 $.ajax(
@@ -34,11 +57,21 @@ $.ajax(
     {
         result.forEach((stop) => {
           bus_stops.push(stop);
+          var currentPage = new URLSearchParams(window.location.search).get('page');
+          if (currentPage == "busstopcv") {
+            var stopText = `
+              <h3 class='mt-1'>#${stop.id}: ${stop.name}</h3>
+              <img class='sv_image mb-2' src='${stop.image}' alt='Street view image of bus stop'>
+              <a class="font-bold" href="http://localhost:8080/accesslabeler/?id=${stop.id}&GSV=${encodeURIComponent(stop.link)}" onclick="viewCV(${stop.id})">View Bus Stop CV</a>
+            `;
+            stop_markers[stop.id] = L.marker([stop.lat, stop.lon], {icon: blueStop}).bindPopup(stopText);
+          }
+          else {
           if (stop.benches) {
             var stopText = `
+            <h3 class='mt-1'>#${stop.id}: ${stop.name}</h3>
               <img class='sv_image' src='${stop.image}' alt='Street view image of bus stop'>
               <a href='${stop.link}' target='_blank'>View Image on Google</a>
-              <h3 class='mt-1'>#${stop.id}: ${stop.name}</h3>
               <table>
                 <tr>
                   <th>Amenity</th>
@@ -61,12 +94,12 @@ $.ajax(
                   <td>${stop.racks}</td>
                 </tr>
               </table>
-            `;
+           `;
             if (stop.shelters != 0) {
               stopText = `
+              <h3 class='mt-1'>#${stop.id}: ${stop.name}</h3>
               <img class='sv_image' src='${stop.image}' alt='Street view image of bus stop'>
               <a href='${stop.link}' target='_blank'>View Image on Google</a>
-              <h3 class='mt-1'>#${stop.id}: ${stop.name}</h3>
               <table>
                 <tr>
                   <th>Amenity</th>
@@ -89,14 +122,15 @@ $.ajax(
                   <td>${stop.racks}</td>
                 </tr>
               </table>
-              `;
+             `;
             }
             stop_markers[stop.id] = L.marker([stop.lat, stop.lon], {icon: blueStop}).bindPopup(stopText);
           }
           else {
-            var stopText = "<h3 class='text-red-500'>#" + stop.id + ": " + stop.name+"</h3><table><tr><th>Amenity</th><th>Amount</th></tr><tr><td>Shelters</td><td>N/A</td></tr><tr><td>Benches</td><td>N/A</td></tr><tr><td>Trashcans</td><td>N/A</tr><tr><td>Bikeracks</td><td>N/A</td></tr></table>";
+            var stopText = `<h3 class='text-red-500'>#${stop.id}: ${stop.name}</h3><img class='sv_image' src='${stop.image}' alt='Street view image of bus stop'><a href='${stop.link}' target='_blank'>View Image on Google</a><table><tr><th>Amenity</th><th>Amount</th></tr><tr><td>Shelters</td><td>N/A</td></tr><tr><td>Benches</td><td>N/A</td></tr><tr><td>Trashcans</td><td>N/A</tr><tr><td>Bikeracks</td><td>N/A</td></tr></table>`;
             stop_markers[stop.id] = L.marker([stop.lat, stop.lon], {icon: incompleteStop}).bindPopup(stopText);
           }
+        }
           if (stop.benches > 0) {
             haveBenches++;
           }
@@ -121,23 +155,26 @@ $.ajax(
           displayedMarkers.add(stop_markers[stop.id].getLatLng());
         }
     );
-    const tableBody = document.querySelector("#amenityTable tbody");
-    const amenityData = [
-      { amenity: "Shelter(s)", ratio: haveShelter, percent: ((haveShelter / bus_stops.length)* 100).toFixed(2)  + "%" },
-      { amenity: "Bench(es)", ratio: haveBenches, percent: ((haveBenches / bus_stops.length)* 100).toFixed(2) + "%" },
-      { amenity: "Bike Racks(s)", ratio: haveBikeracks, percent: ((haveBikeracks / bus_stops.length)* 100).toFixed(2) + "%" },
-      { amenity: "Trash Can(s)", ratio: haveTrashcans, percent: ((haveTrashcans / bus_stops.length)* 100).toFixed(2) + "%" },
-      { amenity: "None", ratio: haveNone, percent: ((haveNone / bus_stops.length)* 100).toFixed(2) + "%" }
-    ];
-    amenityData.forEach(item => {
-      const row = document.createElement("tr");
-      Object.values(item).forEach(value => {
-        const cell = document.createElement("td");
-        cell.textContent = value;
-        row.appendChild(cell);
+    var currentPage = new URLSearchParams(window.location.search).get('page');
+    if (currentPage != "busstopcv") {
+      const tableBody = document.querySelector("#amenityTable tbody");
+      const amenityData = [
+        { amenity: "Shelter(s)", ratio: haveShelter, percent: ((haveShelter / bus_stops.length)* 100).toFixed(2)  + "%" },
+        { amenity: "Bench(es)", ratio: haveBenches, percent: ((haveBenches / bus_stops.length)* 100).toFixed(2) + "%" },
+        { amenity: "Bike Racks(s)", ratio: haveBikeracks, percent: ((haveBikeracks / bus_stops.length)* 100).toFixed(2) + "%" },
+        { amenity: "Trash Can(s)", ratio: haveTrashcans, percent: ((haveTrashcans / bus_stops.length)* 100).toFixed(2) + "%" },
+        { amenity: "None", ratio: haveNone, percent: ((haveNone / bus_stops.length)* 100).toFixed(2) + "%" }
+      ];
+      amenityData.forEach(item => {
+        const row = document.createElement("tr");
+        Object.values(item).forEach(value => {
+          const cell = document.createElement("td");
+          cell.textContent = value;
+          row.appendChild(cell);
+        });
+        tableBody.appendChild(row);
       });
-      tableBody.appendChild(row);
-    });
+    }
   },           
   error: function (responseText)
   {
@@ -148,9 +185,25 @@ $.ajax(
 
 //on default page load stop #1
 document.addEventListener("DOMContentLoaded", function() {
-  markerToReport = stop_markers[1];
-  var stopToDisplay = bus_stops.find(stop => stop.id === "1");
-  displayStop(stopToDisplay);
+  if (localStorage.getItem('confirmPage') == 'true') {
+    setTimeout(function() {
+    showConfirmPage();
+    }, 200)
+  }
+  var currentPage = new URLSearchParams(window.location.search).get('page');
+  if (currentPage != "busstopcv") {
+    markerToReport = stop_markers[1];
+    var stopToDisplay = bus_stops.find(stop => stop.id === "1");
+    displayStop(stopToDisplay);
+  }
+  else {
+    if (!localStorage.getItem('firstCVVisit')) {
+      localStorage.setItem('firstCVVisit', 'true');
+      document.getElementById("aboutcvPage").style.display = "flex";
+    } else {
+      document.getElementById("aboutcvPage").style.display = "none";
+    }
+  }
 });
 
 //helper function -> resets amenity form to default values
@@ -426,4 +479,3 @@ function showError(error) {
           break;
   }
 }
-

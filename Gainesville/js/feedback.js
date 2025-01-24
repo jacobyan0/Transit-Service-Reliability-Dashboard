@@ -29,6 +29,21 @@ function selectReport(type) {
     else {
         viewGeo();
     }
+    document.getElementById('location').addEventListener('keypress', function (e) {
+        const char = String.fromCharCode(e.which);
+    
+        if (!/^[a-zA-Z0-9\s]{1,50}$/.test(char)) {
+            e.preventDefault();
+        }
+    });
+
+    document.getElementById('stopSearchInput').addEventListener('keypress', function (e) {
+        const char = String.fromCharCode(e.which);
+    
+        if (!/^[a-zA-Z0-9\s]{1,50}$/.test(char)) {
+            e.preventDefault();
+        }
+    });
 }
 
 //helper function -> removes all form displays
@@ -55,6 +70,23 @@ function selectForm(type) {
     document.getElementById("default").style.display = "block";
     document.getElementById(reportType).style.display = "block";
     document.getElementById("reportSelection").value = reportType;
+
+    document.getElementById('location').addEventListener('keypress', function (e) {
+        const char = String.fromCharCode(e.which);
+    
+        if (!/^[a-zA-Z0-9\s]{1,50}$/.test(char)) {
+            e.preventDefault();
+        }
+    });
+
+    
+    document.getElementById('stopSearchInput').addEventListener('keypress', function (e) {
+        const char = String.fromCharCode(e.which);
+    
+        if (!/^[a-zA-Z0-9\s]{1,50}$/.test(char)) {
+            e.preventDefault();
+        }
+    });
 }
 
 //helper function -> resets feedback form
@@ -62,6 +94,8 @@ function resetForm() {
     map.removeLayer(reportLocation);
     document.getElementById("feedbackForm").reset();
 }
+
+
 
 var geoMarker;
 var reportLocation = L.marker([29.652, -82.339], { draggable: true });

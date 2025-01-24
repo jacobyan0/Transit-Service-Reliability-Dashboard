@@ -34,11 +34,9 @@
       display: hidden;
     }
 </style>
-
 <script>
   <?php include 'js/amenities.js'?>
 </script>
-
 <div class="bg-green-700/40 shadow-lg h-5/6 flex flex-row">
   <div class="p-4 w-1/3 overflow-auto text-base-content mb-4">
     <div id="reportMarker" class="bg-white/80 text-slate-900/80 text-base rounded-lg font-semibold p-3">
@@ -109,7 +107,7 @@
         <option disabled selected value="none">View Stops by Route</option>
         <option value="clear">Clear</option>
         <?php
-          $sql = "SELECT `route_id`, `route_long_name`, `route_color` FROM `routes` ORDER BY `routes`.`route_id` ASC";
+          $sql = "SELECT `route_id`, `route_name`, `route_color` FROM `routes` ORDER BY `routes`.`route_id` ASC";
           $result = $conn->query($sql);
           if ($result->num_rows > 0) {
             // Output data of each row
@@ -126,7 +124,7 @@
     </div>
   </div>
   <div class="w-2/3 relative flex-1 mr-8 mb-8">
-    <div id="map" class="w-full ml-4 m-auto rounded-lg mt-4"></div>
+  <div id="map" class="w-full ml-4 m-auto rounded-lg mt-4"></div>
     <div id="maploading" class="hidden w-full ml-4 rounded-lg">
       <div class="flex flex-col items-center justify-center" role="status">
           <svg aria-hidden="true" class="inline w-20 h-20 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -138,5 +136,4 @@
     </div>
   </div> 
 </div>
-
 
